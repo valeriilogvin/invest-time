@@ -1,1 +1,0 @@
-var asdasd = require('sdasdasd');

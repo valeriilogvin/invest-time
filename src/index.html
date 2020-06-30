@@ -18,22 +18,7 @@
 
 <body>
 
-    <!--md-modal-->
-    <div class="md-modal md-effect-1" id="modal-1">
-        <div class="md-content">
-            <button class="md-close"><span></span><span></span></button>
-            <h1>
-                вфывждло
-            </h1>
-        </div>
-    </div>
-
-    <!--md-modal-button-->
-    <!--<a data-modal="modal-1" class="md-trigger">Открыть попап</a>-->
-
-    <!--md-modal:end-->
-
-    <div class="wrapper">
+<div class="wrapper">
 
         <!--pushy-->
         <nav class="pushy pushy-left" data-focus="#first-link">
@@ -63,19 +48,45 @@
 
         <section class="section1">
             <div class="conteiner">
-
-                <button class="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-                </button>
-
-                <h1>h1</h1>
-                <h2>h2</h2>
-                <h3>h3</h3>
-                <h4>h4</h4>
-                <h5>h5</h5>
-                <h6>h6</h6>
+                <div class="header">
+                   <div class="flex">
+                       <a href="#" class="logo">
+                           <img src="img/logo-top.svg" alt="">
+                       </a>
+                       <nav>
+                           <ul>
+                               <li><a href="#">О нас</a></li>
+                               <li><a href="#">Отзывы</a></li>
+                               <li><a href="#">Услуги</a></li>
+                               <li><a href="#">Контакты</a></li>
+                           </ul>
+                       </nav>
+                   </div>
+                </div>
+                <h1>Invest time </h1>
+                <h2>Ваш надежный партнер в инвестициях</h2>
+                <h3>Профессиональное управление инвестиционными<br />
+                    пакетами, прирост инвестиций от <span>15</span> до <span>40%</span> в год</h3>
+                <div class="form">
+                    <p>
+                        Заполни форму и получи бесплатную <br />
+                        консультацию аналитика прямо сейчас
+                    </p>
+                    <form>
+                        <p>
+                            <span class="wpcf7-form-control-wrap your-name">
+                                <input type="text" value="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Влад">
+                            </span>
+                        </p>
+                        <p>
+                            <span class="wpcf7-form-control-wrap your-phone">
+                                <input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel input-mask-s" aria-required="true" aria-invalid="false" placeholder="+3 (" im-insert="true">
+                            </span>
+                        </p>
+                        <p><input type="submit" value="Получить консультацию" class="wpcf7-form-control wpcf7-submit button"><span class="ajax-loader"></span><br>
+                        </p>
+                    </form>
+                </div>
             </div>
         </section>
         <div class="section2">
@@ -89,9 +100,23 @@
             </div>
         </div>
     </div>
+
+    <!--md-modal-->
+    <div class="md-modal md-effect-1" id="modal-1">
+        <div class="md-content">
+            <button class="md-close"><span></span><span></span></button>
+            <p>popap</p>
+        </div>
+    </div>
+
+    <!--md-modal-button-->
+    <a data-modal="modal-1" class="md-trigger">Открыть попап</a>
+
+    <!--md-modal:end-->
+    <div class="md-overlay"></div><!-- the overlay element -->
 </body>
 
-<div class="md-overlay"></div><!-- the overlay element -->
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

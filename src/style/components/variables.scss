@@ -1,34 +1,38 @@
+//colors
+$button-bg: #2339FF;
+$h3-color: #0054D2;
+$h2-span: #237BFF;
+
 //body
-$ff-body: 'Merriweather Sans', sans-serif;
-$fz-body: 14px;
-$lh-body: 24px;
-$fw-body: 300;
-$color-body: #fff;
-$bg-color-body: #222222;
+$ff-body: 'SF UI Regular', sans-serif;
+$fz-body: 16px;
+$lh-body: 19px;
+$color-body: #333333;
+$bg-color-body: #ffffff;
 //body: END
 
 // section-padding
-$p-section: 80px 0;
+$p-section: 90px 0 100px;
 $p-section-laptop: 60px 0;
 $p-section-tablet: 50px 0;
 $p-section-mobile: 30px 0;
 // section-padding: END
 
 // color
-$color-headlines: #fff;
-$color-paragraph: #333;
+$color-headlines: #333333;
+$color-paragraph: #333333;
 $color-links: #fff;
-$color-links-hover: pink;
+$color-links-hover: #fff;
 // color: END
 
 // text style
 // headlines
-$ff-headlines: 'Merriweather Sans', sans-serif;
+$ff-headlines: 'SF UI Bold', sans-serif;
 
 //h1
-$fw-h1: 600;
-$fz-h1: 60px;
-$lh-h1: 70px;
+$fw-h1: 900;
+$fz-h1: 80px;
+$lh-h1: 95px;
 //h1 laptop
 $fz-h1-laptop: 50px;
 $lh-h1-laptop: 60px;
@@ -40,9 +44,9 @@ $fz-h1-mobile: 30px;
 $lh-h1-mobile: 20px;
 
 //h2
-$fw-h2: 400;
-$fz-h2: 50px;
-$lh-h2: 60px;
+$fw-h2: bold;
+$fz-h2: 38px;
+$lh-h2: 45px;
 //h2 laptop
 $fz-h2-laptop: 40px;
 $lh-h2-laptop: 50px;
@@ -55,17 +59,17 @@ $lh-h2-mobile: 30px;
 
 //h3
 $fw-h3: 400;
-$fz-h3: 40px;
-$lh-h3: 50px;
+$fz-h3: 22px;
+$lh-h3: 28px;
 //h3 laptop
-$fz-h3-laptop: 30px;
-$lh-h3-laptop: 40px;
+$fz-h3-laptop: 18px;
+$lh-h3-laptop: 24px;
 //h3 tablet
-$fz-h3-tablet: 30px;
-$lh-h3-tablet: 40px;
+$fz-h3-tablet: 16px;
+$lh-h3-tablet: 22px;
 //h3 mobile
-$fz-h3-mobile: 50px;
-$lh-h3-mobile: 60px;
+$fz-h3-mobile: 16px;
+$lh-h3-mobile: 22px;
 
 //h4
 $fw-h4: 300;
@@ -82,14 +86,14 @@ $fz-h4-mobile: 50px;
 $lh-h4-mobile: 60px;
 
 //links
-$ff-links: 'Open Sans', sans-serif;
-$fw-links: 300;
-$fz-links: 18px;
-$lh-links: 28px;
+$ff-links: 'SF UI Bold', sans-serif;
+$fw-links: bold;
+$fz-links: 16px;
+$lh-links: 19px;
 
 //paragraph
-$ff-paragraph: 'Open Sans', sans-serif;
-$fz-paragraph: 18px;
+$ff-paragraph: 'SF UI Regular', sans-serif;
+$fz-paragraph: 16px;
 $lh-paragraph: 28px;
 // text style: END
 
@@ -97,11 +101,11 @@ $lh-paragraph: 28px;
 //pushy-style
 $pushy-width: 360px;
 $pushy-min-height: 580px;
-$pushy-bg: red;
+$pushy-bg: #2339FF;
 //pushy-style:end
 
 //md-modal
-$bg-overlay: rgba(143,27,15,0.8);
+$bg-overlay: rgba(35,57,255,0.8);
 $max-width-modal-1: 630px;
 $min-width-modal-1: 320px;
 $color-modal-1: #ffffff;
