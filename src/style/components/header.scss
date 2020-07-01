@@ -70,6 +70,9 @@ h2{
   font-weight: $fw-h2;
   font-size: $fz-h2;
   line-height: $lh-h2;
+  span{
+    color: $h2-span;
+  }
 }
 h3{
   text-transform: none;
@@ -132,6 +135,9 @@ a.button{
 //slick-style
 .slick-slide img {
   display: inline-block;
+}
+.slick-initialized .slick-slide{
+  outline: none;
 }
 //slick-style : END
 @media (max-width: 1200px) {

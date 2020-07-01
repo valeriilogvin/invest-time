@@ -110,6 +110,8 @@ h2 {
   font-weight: bold;
   font-size: 38px;
   line-height: 45px; }
+  h2 span {
+    color: #237BFF; }
 
 h3 {
   text-transform: none;
@@ -174,6 +176,9 @@ a.button {
 
 .slick-slide img {
   display: inline-block; }
+
+.slick-initialized .slick-slide {
+  outline: none; }
 
 @media (max-width: 1200px) {
   .conteiner {
@@ -551,6 +556,59 @@ button.menu-btn {
         background: #237BFF; }
     .sect3 .worker-block p {
       padding: 0 10px; }
+
+.sect4 {
+  background: url("../img/sect4-bg.jpg") top center no-repeat; }
+  .sect4 h3 {
+    padding: 38px 0; }
+
+.sect4-slick .slick-list {
+  overflow: visible; }
+
+.sect4-slick .slide {
+  padding: 56px 40px;
+  width: 350px !important;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16); }
+  .sect4-slick .slide + .slide {
+    margin-left: 30px; }
+  .sect4-slick .slide h1.title {
+    font-family: "SF UI Black", sans-serif;
+    font-size: 38px;
+    line-height: 45px;
+    color: #237BFF;
+    text-transform: capitalize; }
+  .sect4-slick .slide h2.text {
+    padding: 20px 0 25px;
+    font-size: 18px;
+    line-height: 21px; }
+  .sect4-slick .slide p {
+    font-family: "SF UI Semibold", sans-serif;
+    padding: 30px 0 10px;
+    line-height: 22px; }
+  .sect4-slick .slide .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .sect4-slick .slide .list span {
+      font-size: 14px;
+      line-height: 20px; }
+      .sect4-slick .slide .list span:last-child {
+        font-family: "SF UI Bold", sans-serif; }
+
+.sect4-slick .slide3 {
+  background-color: #237BFF;
+  color: #fff; }
+  .sect4-slick .slide3 h1.title, .sect4-slick .slide3 h2.text {
+    color: #fff; }
 
 @font-face {
   font-family: 'SF UI Black';
