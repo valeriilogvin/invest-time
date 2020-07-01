@@ -6,12 +6,14 @@ textarea{
 }
 /* input */
 input:-moz-placeholder{
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.268);
+  font-size: 18px;
+  line-height: 21px;
+  color:#B2B2B2;
 }
 input::-webkit-input-placeholder {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.268);
+  font-size: 18px;
+  line-height: 21px;
+  color:#B2B2B2;
 }
 .inputable[type=submit] {
   cursor: pointer;
@@ -70,9 +72,16 @@ h2{
   line-height: $lh-h2;
 }
 h3{
+  text-transform: none;
+  padding-top: 14px;
+  font-family: $ff-regular;
   font-weight: $fw-h3;
   font-size: $fz-h3;
   line-height: $lh-h3;
+  color: $h3-color;
+  span{
+    font-family: 'SF UI Heavy',sans-serif;
+  }
 }
 h4{
   font-weight: $fw-h4;
@@ -101,10 +110,30 @@ section{
 }
 
 .conteiner{
-  width:1140px;
+  width:1120px;
   margin:auto;
   padding:0 20px;
 }
+a.button{
+  width: 350px;
+  background: $button-bg;
+  border-radius: 27px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: 'SF UI Bold', sans-serif;
+  cursor: pointer;
+  border: none;
+  padding: 17px 0;
+  text-align: center;
+  display: inline-block;
+}
+//slick-style
+.slick-slide img {
+  display: inline-block;
+}
+//slick-style : END
 @media (max-width: 1200px) {
   .conteiner {
     width: 960px;

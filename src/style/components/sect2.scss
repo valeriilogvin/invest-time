@@ -1,0 +1,24 @@
+.sect2{
+  background-color: #F8F8F8;
+  .conteiner{
+    background: url("../img/sect2-bg.png") center left no-repeat;
+
+  }
+  .r-block{
+    width: 49%;
+    margin-left: auto;
+  }
+  h2{
+    padding-bottom: 25px;
+  }
+  p{
+    font-size: 22px;
+    line-height: 28px;
+    &+p{
+      padding-top: 75px;
+    }
+  }
+  a.button{
+    margin-top: 23px;
+  }
+}
