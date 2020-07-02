@@ -153,6 +153,9 @@ form {
     padding: 15px 25px;
     margin-bottom: 20px;
   }
+  input:not(.button){
+    border: none;
+  }
   input.button{
     background: $button-bg;
     border-radius: 27px;

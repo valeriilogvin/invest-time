@@ -192,6 +192,8 @@ form {
     border-radius: 2px;
     padding: 15px 25px;
     margin-bottom: 20px; }
+  form input:not(.button) {
+    border: none; }
   form input.button {
     background: #2339FF;
     border-radius: 27px;
