@@ -1,0 +1,68 @@
+.sect7{
+  h3{
+    color: #237BFF;
+    padding-top: 24px;
+  }
+  .logo-img{
+    padding: 40px 0;
+  }
+}
+.sect7-slick{
+
+}
+.reviews{
+  h2{
+    margin-bottom: 50px;
+  }
+}
+.sect7-slick_slide{
+  margin-right: 30px  ;
+  .review-header{
+    display: flex;
+    justify-content: start;
+    background-color: #237BFF;
+    color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    .flex-left{
+      display: inherit;
+      padding-right: 30px;
+    }
+    .radial{
+      width: 71px;
+      height: 71px;
+      border-radius: 50%;
+    }
+    .name{
+      font-size: 22px;
+      line-height: 26px;
+      font-family: $ff-bold;
+    }
+    .city{
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(255, 255, 255, 0.71);
+      font-family: $ff-regular;
+    }
+    .work{
+      font-size: 16px;
+      line-height: 19px;
+      font-family: $ff-light;
+      padding-top: 13px;
+    }
+  }
+  p.text{
+    min-height: 155px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  p.total{
+    font-size: 16px;
+    line-height: 19px;
+    color: #237BFF;
+    font-family: $ff-light;
+    padding-left: 20px;
+  }
+}

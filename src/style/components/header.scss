@@ -23,9 +23,6 @@ input::-webkit-input-placeholder {
 button{
   outline: none;
 }
-:hover{
-  transition: all 0.5s ease;
-}
 body{
   font-family: $ff-body;
   font-size: $fz-body;
@@ -131,6 +128,10 @@ a.button{
   padding: 17px 0;
   text-align: center;
   display: inline-block;
+  &:hover{
+    background: #23B0FF;
+    transition: all .5s ease;
+  }
 }
 //slick-style
 form {
@@ -162,6 +163,10 @@ form {
     font-family: 'SF UI Bold', sans-serif;
     cursor: pointer;
     border: none;
+    &:hover{
+      background: #23B0FF;
+      transition: all .5s ease;
+    }
   }
 }
 .slick-slide img {
@@ -170,6 +175,62 @@ form {
 .slick-initialized .slick-slide{
   outline: none;
 }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+button.slick-arrow{
+  background: none;
+  border: none;
+}
+.icon-slick-l,
+.icon-slick-r{
+  width: 14px;
+  height: 18px;
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+  fill: #B2B2B2;
+  &:hover{
+    fill: #2339FF;
+    transition: all 0.5s ease;
+  }
+}
+.icon-slick-l{
+  left: 43%;
+}
+.icon-slick-r{
+  right: 43%;
+}
+.my-slick-dots {
+  margin-top: 20px;
+  text-align: center;
+  list-style: none; }
+.my-slick-dots li {
+  display: inline-block;
+  margin: 12px 5px;
+  border: 1px solid transparent; }
+.my-slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #363635; }
+.my-slick-dots li.slick-active button {
+  background: #2339FF; }
 //slick-style : END
 @media (max-width: 1200px) {
   .conteiner {

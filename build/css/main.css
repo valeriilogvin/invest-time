@@ -65,11 +65,6 @@ input::-webkit-input-placeholder {
 button {
   outline: none; }
 
-:hover {
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
 body {
   font-family: "SF UI Regular", sans-serif;
   font-size: 16px;
@@ -173,6 +168,11 @@ a.button {
   padding: 17px 0;
   text-align: center;
   display: inline-block; }
+  a.button:hover {
+    background: #23B0FF;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
 
 form {
   width: 349px; }
@@ -202,12 +202,79 @@ form {
     font-family: 'SF UI Bold', sans-serif;
     cursor: pointer;
     border: none; }
+    form input.button:hover {
+      background: #23B0FF;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
 
 .slick-slide img {
   display: inline-block; }
 
 .slick-initialized .slick-slide {
   outline: none; }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
+button.slick-arrow {
+  background: none;
+  border: none; }
+
+.icon-slick-l,
+.icon-slick-r {
+  width: 14px;
+  height: 18px;
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+  fill: #B2B2B2; }
+  .icon-slick-l:hover,
+  .icon-slick-r:hover {
+    fill: #2339FF;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+.icon-slick-l {
+  left: 43%; }
+
+.icon-slick-r {
+  right: 43%; }
+
+.my-slick-dots {
+  margin-top: 20px;
+  text-align: center;
+  list-style: none; }
+
+.my-slick-dots li {
+  display: inline-block;
+  margin: 12px 5px;
+  border: 1px solid transparent; }
+
+.my-slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #363635; }
+
+.my-slick-dots li.slick-active button {
+  background: #2339FF; }
 
 @media (max-width: 1200px) {
   .conteiner {
@@ -480,6 +547,11 @@ button.menu-btn {
       font-size: 22px;
       line-height: 26px;
       font-family: 'SF UI Regular', sans-serif; }
+      .sect1 .header ul li a:hover {
+        color: #23B0FF;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
     .sect1 .header ul li + li {
       margin-left: 35px; }
   .sect1 h1, .sect1 h2, .sect1 h3 {
@@ -631,6 +703,11 @@ button.menu-btn {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%; }
+    .sect5 .form form input:not(.button) {
+      -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
+              box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
+      border-radius: 2px;
+      border: none; }
   .sect5 .form p {
     width: 349px; }
 
@@ -696,6 +773,138 @@ button.menu-btn {
       content: url("../img/sect6-check.svg");
       left: 0;
       top: 0; }
+
+.sect7 h3 {
+  color: #237BFF;
+  padding-top: 24px; }
+
+.sect7 .logo-img {
+  padding: 40px 0; }
+
+.reviews h2 {
+  margin-bottom: 50px; }
+
+.sect7-slick_slide {
+  margin-right: 30px; }
+  .sect7-slick_slide .review-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    background-color: #237BFF;
+    color: #fff;
+    border-radius: 4px;
+    padding: 20px; }
+    .sect7-slick_slide .review-header .flex-left {
+      display: inherit;
+      padding-right: 30px; }
+    .sect7-slick_slide .review-header .radial {
+      width: 71px;
+      height: 71px;
+      border-radius: 50%; }
+    .sect7-slick_slide .review-header .name {
+      font-size: 22px;
+      line-height: 26px;
+      font-family: "SF UI Bold", sans-serif; }
+    .sect7-slick_slide .review-header .city {
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(255, 255, 255, 0.71);
+      font-family: "SF UI Regular", sans-serif; }
+    .sect7-slick_slide .review-header .work {
+      font-size: 16px;
+      line-height: 19px;
+      font-family: "SF UI Light", sans-serif;
+      padding-top: 13px; }
+  .sect7-slick_slide p.text {
+    min-height: 155px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .sect7-slick_slide p.total {
+    font-size: 16px;
+    line-height: 19px;
+    color: #237BFF;
+    font-family: "SF UI Light", sans-serif;
+    padding-left: 20px; }
+
+.footer {
+  background: #237BFF;
+  padding: 85px 0 100px;
+  position: relative;
+  color: #fff; }
+  .footer .flex {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .footer:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: -52px;
+    border-bottom: 52px solid #99C2FF;
+    border-left: 800px solid transparent; }
+  .footer .left {
+    width: 220px; }
+    .footer .left p {
+      padding: 12px 0 11px;
+      font-family: "SF UI Bold", sans-serif;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 19px; }
+    .footer .left li {
+      font-size: 14px;
+      line-height: 34px;
+      color: rgba(255, 255, 255, 0.6); }
+  .footer .center {
+    max-width: 400px;
+    text-align: center; }
+    .footer .center p {
+      padding-top: 20px;
+      font-size: 14px;
+      line-height: 24px; }
+    .footer .center .social {
+      padding-top: 40px; }
+      .footer .center .social a + a {
+        margin-left: 30px; }
+    .footer .center .icon {
+      cursor: pointer;
+      fill: rgba(255, 255, 255, 0.6); }
+      .footer .center .icon:hover {
+        fill: #ffffff;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
+  .footer .right {
+    max-width: 220px; }
+    .footer .right p {
+      padding: 12px 0 11px;
+      font-family: "SF UI Bold", sans-serif;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 19px; }
+    .footer .right .text {
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 30px;
+      display: inline-block; }
+    .footer .right .link {
+      display: block;
+      font-size: 14px;
+      line-height: 32px;
+      color: #A7A7A7; }
+      .footer .right .link a {
+        color: #FFFFFF;
+        font-family: "SF UI Regular", sans-serif;
+        font-size: 14px;
+        line-height: 32px; }
 
 @font-face {
   font-family: 'SF UI Black';

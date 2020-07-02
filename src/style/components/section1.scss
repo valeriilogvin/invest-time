@@ -12,6 +12,10 @@
        font-size: 22px;
        line-height: 26px;
        font-family: 'SF UI Regular', sans-serif;
+       &:hover{
+         color: #23B0FF;
+         transition: all .5s ease;
+       }
      }
      &+li{
       margin-left: 35px;
