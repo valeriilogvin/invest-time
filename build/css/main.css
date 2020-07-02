@@ -174,6 +174,35 @@ a.button {
   text-align: center;
   display: inline-block; }
 
+form {
+  width: 349px; }
+  form p {
+    width: 100%; }
+  form span {
+    width: inherit; }
+  form input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: inherit;
+    -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    border-radius: 2px;
+    padding: 15px 25px;
+    margin-bottom: 20px; }
+  form input.button {
+    background: #2339FF;
+    border-radius: 27px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'SF UI Bold', sans-serif;
+    cursor: pointer;
+    border: none; }
+
 .slick-slide img {
   display: inline-block; }
 
@@ -479,34 +508,6 @@ button.menu-btn {
       font-size: 22px;
       line-height: 28px;
       margin-bottom: 24px; }
-    .sect1 .form form {
-      width: 349px; }
-      .sect1 .form form p {
-        width: 100%; }
-      .sect1 .form form span {
-        width: inherit; }
-      .sect1 .form form input {
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        width: inherit;
-        -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
-                box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
-        font-size: 18px;
-        line-height: 21px;
-        color: #333333;
-        border-radius: 2px;
-        padding: 15px 25px;
-        margin-bottom: 20px; }
-      .sect1 .form form input.button {
-        background: #2339FF;
-        border-radius: 27px;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        font-family: 'SF UI Bold', sans-serif;
-        cursor: pointer;
-        border: none; }
 
 .sect2 {
   background-color: #F8F8F8; }
@@ -555,17 +556,15 @@ button.menu-btn {
         height: 6px;
         background: #237BFF; }
     .sect3 .worker-block p {
-      padding: 0 10px; }
+      padding: 7px 10px 0; }
 
 .sect4 {
   background: url("../img/sect4-bg.jpg") top center no-repeat; }
   .sect4 h3 {
-    padding: 38px 0; }
-
-.sect4-slick .slick-list {
-  overflow: visible; }
+    padding: 31px 0 27px; }
 
 .sect4-slick .slide {
+  margin: 13px;
   padding: 56px 40px;
   width: 350px !important;
   background-color: #fff;
@@ -574,7 +573,7 @@ button.menu-btn {
   -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16); }
   .sect4-slick .slide + .slide {
-    margin-left: 30px; }
+    margin-left: 10px; }
   .sect4-slick .slide h1.title {
     font-family: "SF UI Black", sans-serif;
     font-size: 38px;
@@ -609,6 +608,94 @@ button.menu-btn {
   color: #fff; }
   .sect4-slick .slide3 h1.title, .sect4-slick .slide3 h2.text {
     color: #fff; }
+
+.sect5 {
+  padding: 90px 0 74px; }
+  .sect5 h2 {
+    text-align: center;
+    padding-bottom: 77px; }
+  .sect5 .flex .item {
+    width: 33%;
+    text-align: center; }
+    .sect5 .flex .item p {
+      padding-top: 25px; }
+  .sect5 .form h3 {
+    padding: 48px 0 28px; }
+  .sect5 .form form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+  .sect5 .form p {
+    width: 349px; }
+
+.sect6 {
+  background: #F8F8F8; }
+  .sect6 h3 {
+    padding: 25px 0 45px;
+    color: #333333; }
+  .sect6 h4 {
+    font-size: 28px;
+    line-height: 33px;
+    padding-bottom: 42px; }
+  .sect6 .sect6-bottom {
+    text-align: center; }
+    .sect6 .sect6-bottom h3 {
+      padding: 71px 0 34px; }
+    .sect6 .sect6-bottom a.button {
+      margin: 0 auto; }
+
+.sect6-slick .slide {
+  margin: 13px;
+  padding: 52px 20px 0 32px;
+  width: 350px !important;
+  min-height: 450px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 14px rgba(0, 0, 0, 0.16);
+  background-color: #237BFF;
+  border-radius: 4px;
+  background-position: bottom right;
+  background-repeat: no-repeat; }
+  .sect6-slick .slide + .slide {
+    margin-left: 10px; }
+
+.sect6-slick .slide1 {
+  background-image: url(../img/sect6-1.svg); }
+
+.sect6-slick .slide2 {
+  background-image: url(../img/sect6-2.svg); }
+
+.sect6-slick h4 {
+  padding-bottom: 0;
+  font-family: "SF UI Black", sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  color: #fff;
+  text-transform: none; }
+
+.sect6-slick ul {
+  padding-top: 50px; }
+  .sect6-slick ul li {
+    position: relative;
+    padding-left: 40px;
+    color: #fff;
+    font-family: "SF UI Semibold", sans-serif;
+    font-size: 16px;
+    line-height: 19px; }
+    .sect6-slick ul li + li {
+      margin-top: 20px; }
+    .sect6-slick ul li:after {
+      position: absolute;
+      content: url("../img/sect6-check.svg");
+      left: 0;
+      top: 0; }
 
 @font-face {
   font-family: 'SF UI Black';

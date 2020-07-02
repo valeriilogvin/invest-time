@@ -37,7 +37,7 @@ $(document).ready(function(){
         ]
     });
 
-    $('.sect4-slick').slick({
+    $('.sect4-slick, .sect6-slick').slick({
         dots: false,
         arrows: false,
         infinite: false,
@@ -56,8 +56,8 @@ $(document).ready(function(){
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             },
             {

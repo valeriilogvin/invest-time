@@ -1,0 +1,29 @@
+.sect5{
+  padding: 90px 0 74px;
+  h2{
+    text-align: center;
+    padding-bottom: 77px;
+  }
+  .flex{
+    .item{
+      width: 33%;
+      text-align: center;
+      p{
+        padding-top: 25px;
+      }
+    }
+  }
+  .form{
+    h3{
+      padding: 48px 0 28px;
+    }
+    form{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    p{
+      width: 349px;
+    }
+  }
+}

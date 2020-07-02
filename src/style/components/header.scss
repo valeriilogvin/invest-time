@@ -133,6 +133,37 @@ a.button{
   display: inline-block;
 }
 //slick-style
+form {
+  width: 349px;
+  p {
+    width: 100%;
+  }
+  span {
+    width: inherit;
+  }
+  input {
+    box-sizing: border-box;
+    width: inherit;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
+    font-size: 18px;
+    line-height: 21px;
+    color:#333333;
+    border-radius: 2px;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+  }
+  input.button{
+    background: $button-bg;
+    border-radius: 27px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'SF UI Bold', sans-serif;
+    cursor: pointer;
+    border: none;
+  }
+}
 .slick-slide img {
   display: inline-block;
 }
