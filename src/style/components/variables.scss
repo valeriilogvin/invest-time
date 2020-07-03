@@ -56,8 +56,8 @@ $lh-h2: 45px;
 $fz-h2-laptop: 28px;
 $lh-h2-laptop: 36px;
 //h2 tablet
-$fz-h2-tablet: 30px;
-$lh-h2-tablet: 40px;
+$fz-h2-tablet: 24px;
+$lh-h2-tablet: 32px;
 //h2 mobile
 $fz-h2-mobile: 20px;
 $lh-h2-mobile: 30px;
@@ -70,7 +70,7 @@ $lh-h3: 28px;
 $fz-h3-laptop: 18px;
 $lh-h3-laptop: 24px;
 //h3 tablet
-$fz-h3-tablet: 16px;
+$fz-h3-tablet: 18px;
 $lh-h3-tablet: 22px;
 //h3 mobile
 $fz-h3-mobile: 16px;
@@ -106,7 +106,8 @@ $lh-paragraph: 28px;
 //pushy-style
 $pushy-width: 360px;
 $pushy-min-height: 580px;
-$pushy-bg: #2339FF;
+$pushy-bg: #fff;
+$pushy-color: #333333;
 
 //md-modal
 $bg-overlay: rgba(35,57,255,0.8);

@@ -49,7 +49,20 @@
     padding-top: 50px;
   }
 }
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  .sect2 .conteiner {
+    background-size: 150px;
+    background-position: 0 -30px;
+  }
+  .sect2 .r-block {
+    width: 100%;
+    text-align: center;
+  }
+  .sect2 h2 {
+    padding-left: 135px;
+    text-align: left;
+  }
+}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}
 @media (max-width: 380px) {}

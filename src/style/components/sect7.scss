@@ -92,7 +92,25 @@
     line-height: 24px;
   }
 }
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  .sect7 h3{
+    br{
+      display: none;
+    }
+  }
+  .reviews h2 {
+    margin-bottom: 0;
+  }
+  .sect7-slick_slide p.text {
+    min-height: 160px;
+  }
+  .sect7 .icon-slick-r {
+    right: 38%;
+  }
+  .sect7 .icon-slick-l {
+    left: 38%;
+  }
+}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}
 @media (max-width: 380px) {}

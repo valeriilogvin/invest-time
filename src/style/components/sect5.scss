@@ -56,7 +56,21 @@
     padding: 15px 15px;
   }
 }
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  .sect5 {
+    padding: 50px 0;
+  }
+  .sect5 .form form {
+    flex-wrap: wrap;
+  }
+  .sect5 .form p {
+    display: block;
+    width: 350px;
+  }
+  .sect5 .flex .item {
+    width: 30%;
+  }
+}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}
 @media (max-width: 380px) {}

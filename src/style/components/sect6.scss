@@ -96,7 +96,27 @@
     padding: 5px 0 25px;
   }
 }
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  .sect6 br{
+    display: none;
+  }
+  .sect6-slick .slide {
+    width: 284px !important;
+    min-height: 380px;
+  }
+  .sect6 h4 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 0;
+  }
+  .sect6-slick .slide h4{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .sect6-slick .slide ul li + li {
+    margin-top: 13px;
+  }
+}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}
 @media (max-width: 380px) {}

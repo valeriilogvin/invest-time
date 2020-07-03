@@ -122,7 +122,43 @@
     line-height: 24px;
   }
 }
-@media (max-width: 767px) {}
-@media (max-width: 640px) {}
+@media (max-width: 767px) {
+  .sect1 {
+    background-position: -555px 0;
+  }
+  .sect1 h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .sect1 h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .sect1 h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .sect1 .form > p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .sect1 form {
+    width: 300px;
+  }
+  .sect1 form input{
+    margin-bottom: 15px;
+  }
+  .bs-navbar {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 640px) {
+  .sect1 .menu-btn.display_none{
+    display: block;
+  }
+  .sect1 .header nav{
+    display: none;
+  }
+}
 @media (max-width: 479px) {}
 @media (max-width: 380px) {}

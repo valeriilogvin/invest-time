@@ -63,7 +63,15 @@
     width: 344px !important;
   }
 }
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  .sect4{
+    padding-bottom: 10px ;
+  }
+  .sect4-slick .slide {
+    width: 284px !important;
+  }
+
+}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}
 @media (max-width: 380px) {}

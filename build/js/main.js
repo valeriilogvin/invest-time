@@ -69,6 +69,7 @@ $(document).ready(function(){
             {
                 breakpoint: 1001,
                 settings: {
+                    autoplay: true,
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     dots:true,
@@ -109,14 +110,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="my-slick-next"><svg class="icon icon-slick-r"><use xlink:href="#icon-slick-r"></use></svg></button>',
         responsive: [
             {
-                breakpoint: 1001,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
