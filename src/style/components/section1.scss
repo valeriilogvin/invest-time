@@ -1,51 +1,35 @@
-.header{
-  position: fixed;
-  top: 55px;
-  width: 100%;
-  .flex{
-    align-items: center;
-  }
-  ul{
-    li{
-      display: inline-block;
-      a{
-        font-size: 22px;
-        line-height: 26px;
-        font-family: 'SF UI Regular', sans-serif;
-        &:hover{
-          color: #23B0FF;
-          transition: all .5s ease;
-        }
-      }
-      &+li{
-        margin-left: 35px;
-      }
-    }
-  }
-}
-//fixed-header
-.position-fixed {
-  position: fixed!important;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-}
-.bs-navbar {
-  //transition: 0.3s ease;
-  box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
-  padding: 20px 0;
-  background-color: #2339FF;
-}
-//fixed-header : END
+
 .sect1 {
   background: url("../img/s1-bg.jpg") top center no-repeat;
   padding: 55px 0 140px;
-
+  .header{
+    width: 100%;
+    .flex{
+      align-items: center;
+    }
+    ul{
+      li{
+        display: inline-block;
+        a{
+          font-size: 22px;
+          line-height: 26px;
+          font-family: 'SF UI Regular', sans-serif;
+          &:hover{
+            color: #23B0FF;
+            transition: all .5s ease;
+          }
+        }
+        &+li{
+          margin-left: 35px;
+        }
+      }
+    }
+  }
  h1,h2,h3{
   color: #fff;
  }
  h1{
-   padding-top: 140px;
+   padding-top: 85px;
    letter-spacing: 2px;
  }
  h2{

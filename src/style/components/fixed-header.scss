@@ -1,0 +1,48 @@
+.fixed-header{
+  padding: 0;
+  #navbarId{
+
+  }
+  .header{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    .flex{
+      align-items: center;
+    }
+    ul{
+      li{
+        display: inline-block;
+        a{
+          font-size: 22px;
+          line-height: 26px;
+          font-family: 'SF UI Regular', sans-serif;
+          &:hover{
+            color: #23B0FF;
+            transition: all .5s ease;
+          }
+        }
+        &+li{
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+  //fixed-header
+  .position-fixed {
+    position: fixed!important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  .bs-navbar {
+    //transition: 0.3s ease;
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    background-color: #2339FF;
+  }
+  //fixed-header : END
+}
