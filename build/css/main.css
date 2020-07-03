@@ -757,7 +757,8 @@ button.menu-btn {
   .fixed-header .header {
     width: 100%;
     position: absolute;
-    opacity: 0; }
+    opacity: 0;
+    z-index: -1; }
     .fixed-header .header .flex {
       -webkit-box-align: center;
       -webkit-align-items: center;
