@@ -766,8 +766,8 @@ button.menu-btn {
     .fixed-header .header ul li {
       display: inline-block; }
       .fixed-header .header ul li a {
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 20px;
+        line-height: 24px;
         font-family: 'SF UI Regular', sans-serif; }
         .fixed-header .header ul li a:hover {
           color: #23B0FF;
@@ -787,10 +787,33 @@ button.menu-btn {
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
   .fixed-header .bs-navbar {
-    -webkit-box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
     padding: 20px 0;
-    background-color: #2339FF; }
+    background-color: #002255; }
+  .fixed-header a.tel {
+    display: none;
+    margin-left: auto; }
+
+@media (max-width: 1000px) {
+  .fixed-header a.logo img {
+    width: 140px; }
+  .fixed-header nav {
+    display: none; }
+  .fixed-header .display_none {
+    display: block; }
+  .fixed-header a.button {
+    margin-left: auto; } }
+
+@media (max-width: 640px) {
+  .fixed-header a.tel {
+    display: block; }
+  .fixed-header a.button {
+    display: none; } }
+
+@media (max-width: 380px) {
+  .fixed-header a.logo img {
+    width: 100px; }
+  button.menu-btn span {
+    margin-left: 20px; } }
 
 .sect3 {
   text-align: center; }

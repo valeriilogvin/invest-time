@@ -14,8 +14,8 @@
       li{
         display: inline-block;
         a{
-          font-size: 22px;
-          line-height: 26px;
+          font-size: 20px;
+          line-height: 24px;
           font-family: 'SF UI Regular', sans-serif;
           &:hover{
             color: #23B0FF;
@@ -40,9 +40,50 @@
   }
   .bs-navbar {
     //transition: 0.3s ease;
-    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
+    //box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
     padding: 20px 0;
-    background-color: #2339FF;
+    background-color: #002255;
   }
   //fixed-header : END
+  a.tel{
+    display: none;
+    margin-left: auto;
+  }
+}
+@media(max-width: 1000px) {
+  .fixed-header{
+    a.logo{
+      img{
+        width: 140px;
+      }
+    }
+    nav{
+      display: none;
+    }
+    .display_none{
+      display: block;
+    }
+    a.button{
+      margin-left: auto;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .fixed-header{
+    a.tel{
+      display: block;
+    }
+    a.button{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .fixed-header a.logo img {
+    width: 100px;
+  }
+  button.menu-btn span{
+    margin-left: 20px;
+  }
 }
