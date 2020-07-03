@@ -259,7 +259,7 @@ button.slick-arrow{
     line-height: $lh-h1-laptop;
 
   }
-  h2{
+  section h2{
     font-size: $fz-h2-laptop;
     line-height: $lh-h2-laptop;
   }
@@ -270,6 +270,9 @@ button.slick-arrow{
   h4{
     font-size: $fz-h4-laptop;
     line-height: $lh-h4-laptop;
+  }
+  a.button {
+    width: 300px;
   }
 }
 @media (max-width: 767px) {

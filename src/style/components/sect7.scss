@@ -71,7 +71,27 @@
     width: 100%;
   }
 }
-@media(max-width: 1000px) {}
+@media(max-width: 1000px) {
+  .sect7 .icon-slick-r {
+    right: 41%;
+  }
+  .sect7 .icon-slick-l {
+    left: 41%;
+  }
+  .sect7-slick_slide p.text {
+    min-height: 235px;
+  }
+  .sect7-slick_slide .review-header{
+    padding: 15px;
+  }
+  .sect7-slick_slide .review-header .flex-left{
+    padding-right: 20px;
+  }
+  .sect7-slick_slide .review-header .name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 @media (max-width: 767px) {}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}

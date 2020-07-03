@@ -35,6 +35,26 @@
     & + .slide {
       margin-left: 10px;
     }
+    ul{
+      padding-top: 50px;
+      li{
+        position: relative;
+        padding-left: 40px;
+        color: #fff;
+        font-family: $ff-semibold;
+        font-size: 16px;
+        line-height: 19px;
+        & + li{
+          margin-top: 20px;
+        }
+        &:after{
+          position: absolute;
+          content: url("../img/sect6-check.svg");
+          left: 0;
+          top: 0;
+        }
+      }
+    }
   }
   .slide1{
     background-image: url(../img/sect6-1.svg);
@@ -50,26 +70,7 @@
     color: #fff;
     text-transform: none;
   }
-  ul{
-    padding-top: 50px;
-    li{
-      position: relative;
-      padding-left: 40px;
-      color: #fff;
-      font-family: $ff-semibold;
-      font-size: 16px;
-      line-height: 19px;
-      & + li{
-        margin-top: 20px;
-      }
-      &:after{
-        position: absolute;
-        content: url("../img/sect6-check.svg");
-        left: 0;
-        top: 0;
-      }
-    }
-  }
+
 }
 @media (max-width: 1200px) {
   .sect6-slick .slide{
@@ -81,7 +82,20 @@
     line-height: 32px;
   }
 }
-@media(max-width: 1000px) {}
+@media(max-width: 1000px) {
+  .sect6-slick .slide {
+    width: 344px !important;
+  }
+  .sect6 h3 {
+    padding: 20px 0 30px;
+  }
+  .sect6 h4 {
+    padding-bottom: 20px;
+  }
+  .sect6 .sect6-bottom h3 {
+    padding: 5px 0 25px;
+  }
+}
 @media (max-width: 767px) {}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}

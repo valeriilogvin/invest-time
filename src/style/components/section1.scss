@@ -46,7 +46,7 @@
   color: #fff;
  }
  h1{
-   padding-top: 85px;
+   padding-top: 140px;
    letter-spacing: 2px;
  }
  h2{
@@ -81,7 +81,7 @@
     padding: 50px 0 90px;
   }
   .sect1 h1 {
-    padding-top: 75px;
+    //padding-top: 75px;
     letter-spacing: 1px;
     font-size: 75px;
     line-height: 85px;
@@ -100,7 +100,28 @@
     line-height: 26px;
   }
 }
-@media(max-width: 1000px) {}
+@media(max-width: 1000px) {
+  .header ul li a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .sect1 h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .sect1 h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .sect1 h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .sect1 .form > p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 @media (max-width: 767px) {}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}

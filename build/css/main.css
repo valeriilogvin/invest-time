@@ -294,15 +294,17 @@ button.slick-arrow {
   h1 {
     font-size: 50px;
     line-height: 60px; }
-  h2 {
-    font-size: 34px;
-    line-height: 42px; }
+  section h2 {
+    font-size: 28px;
+    line-height: 36px; }
   h3 {
     font-size: 18px;
     line-height: 24px; }
   h4 {
     font-size: 50px;
-    line-height: 60px; } }
+    line-height: 60px; }
+  a.button {
+    width: 300px; } }
 
 @media (max-width: 767px) {
   section {
@@ -583,7 +585,7 @@ button.menu-btn {
   .sect1 h1, .sect1 h2, .sect1 h3 {
     color: #fff; }
   .sect1 h1 {
-    padding-top: 85px;
+    padding-top: 140px;
     letter-spacing: 2px; }
   .sect1 h2 {
     font-size: 32px;
@@ -611,7 +613,6 @@ button.menu-btn {
   .sect1 {
     padding: 50px 0 90px; }
   .sect1 h1 {
-    padding-top: 75px;
     letter-spacing: 1px;
     font-size: 75px;
     line-height: 85px; }
@@ -625,6 +626,23 @@ button.menu-btn {
   .sect1 .form > p {
     font-size: 20px;
     line-height: 26px; } }
+
+@media (max-width: 1000px) {
+  .header ul li a {
+    font-size: 18px;
+    line-height: 24px; }
+  .sect1 h1 {
+    font-size: 70px;
+    line-height: 80px; }
+  .sect1 h2 {
+    font-size: 24px;
+    line-height: 30px; }
+  .sect1 h3 {
+    font-size: 20px;
+    line-height: 24px; }
+  .sect1 .form > p {
+    font-size: 20px;
+    line-height: 24px; } }
 
 .sect2 {
   background-color: #F8F8F8; }
@@ -651,6 +669,17 @@ button.menu-btn {
   .sect2 p {
     font-size: 20px;
     line-height: 26px; } }
+
+@media (max-width: 1000px) {
+  .sect2 .conteiner {
+    background-size: 250px; }
+  .sect2 .r-block {
+    width: 65%; }
+  .sect2 p {
+    font-size: 18px;
+    line-height: 24px; }
+  .sect2 p + p {
+    padding-top: 50px; } }
 
 .sect3 {
   text-align: center; }
@@ -740,6 +769,10 @@ button.menu-btn {
     width: 295px !important;
     padding: 35px 20px; } }
 
+@media (max-width: 1000px) {
+  .sect4-slick .slide {
+    width: 344px !important; } }
+
 .sect5 {
   padding: 90px 0 74px; }
   .sect5 h2 {
@@ -774,6 +807,19 @@ button.menu-btn {
   .sect5 .form p {
     width: 300px; } }
 
+@media (max-width: 1000px) {
+  .sect5 .form p {
+    width: 230px; }
+  .sect5 .flex .item img {
+    width: 100px; }
+  .sect5 .flex .item p {
+    line-height: 24px; }
+  .sect5 form input {
+    font-size: 14px;
+    line-height: 22px; }
+  .sect5 form input.button {
+    padding: 15px 15px; } }
+
 .sect6 {
   background: #F8F8F8; }
   .sect6 h3 {
@@ -805,6 +851,22 @@ button.menu-btn {
   background-repeat: no-repeat; }
   .sect6-slick .slide + .slide {
     margin-left: 10px; }
+  .sect6-slick .slide ul {
+    padding-top: 50px; }
+    .sect6-slick .slide ul li {
+      position: relative;
+      padding-left: 40px;
+      color: #fff;
+      font-family: "SF UI Semibold", sans-serif;
+      font-size: 16px;
+      line-height: 19px; }
+      .sect6-slick .slide ul li + li {
+        margin-top: 20px; }
+      .sect6-slick .slide ul li:after {
+        position: absolute;
+        content: url("../img/sect6-check.svg");
+        left: 0;
+        top: 0; }
 
 .sect6-slick .slide1 {
   background-image: url(../img/sect6-1.svg); }
@@ -820,23 +882,6 @@ button.menu-btn {
   color: #fff;
   text-transform: none; }
 
-.sect6-slick ul {
-  padding-top: 50px; }
-  .sect6-slick ul li {
-    position: relative;
-    padding-left: 40px;
-    color: #fff;
-    font-family: "SF UI Semibold", sans-serif;
-    font-size: 16px;
-    line-height: 19px; }
-    .sect6-slick ul li + li {
-      margin-top: 20px; }
-    .sect6-slick ul li:after {
-      position: absolute;
-      content: url("../img/sect6-check.svg");
-      left: 0;
-      top: 0; }
-
 @media (max-width: 1200px) {
   .sect6-slick .slide {
     width: 295px !important;
@@ -844,6 +889,16 @@ button.menu-btn {
   .sect6-slick h4 {
     font-size: 24px;
     line-height: 32px; } }
+
+@media (max-width: 1000px) {
+  .sect6-slick .slide {
+    width: 344px !important; }
+  .sect6 h3 {
+    padding: 20px 0 30px; }
+  .sect6 h4 {
+    padding-bottom: 20px; }
+  .sect6 .sect6-bottom h3 {
+    padding: 5px 0 25px; } }
 
 .sect7 h3 {
   color: #237BFF;
@@ -908,6 +963,21 @@ button.menu-btn {
 @media (max-width: 1200px) {
   .sect7 .logo-img img {
     width: 100%; } }
+
+@media (max-width: 1000px) {
+  .sect7 .icon-slick-r {
+    right: 41%; }
+  .sect7 .icon-slick-l {
+    left: 41%; }
+  .sect7-slick_slide p.text {
+    min-height: 235px; }
+  .sect7-slick_slide .review-header {
+    padding: 15px; }
+  .sect7-slick_slide .review-header .flex-left {
+    padding-right: 20px; }
+  .sect7-slick_slide .review-header .name {
+    font-size: 20px;
+    line-height: 24px; } }
 
 .footer {
   background: #237BFF;
@@ -980,6 +1050,21 @@ button.menu-btn {
         font-family: "SF UI Regular", sans-serif;
         font-size: 14px;
         line-height: 32px; }
+
+@media (max-width: 1000px) {
+  .footer .flex {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer .left {
+    width: 140px;
+    margin-left: 60px; }
+  .footer .center {
+    max-width: 270px;
+    text-align: center; }
+  .footer .right {
+    max-width: 200px; } }
 
 @font-face {
   font-family: 'SF UI Black';

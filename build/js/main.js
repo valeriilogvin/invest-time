@@ -27,12 +27,16 @@ $(document).ready(function(){
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1001,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                     infinite: true,
-                    dots: true
+                    dots:true,
+                    arrows: true,
+                    dotsClass: 'my-slick-dots',
+                    prevArrow: '<button type="button" class="my-slick-prev"><svg class="icon icon-slick-l"><use xlink:href="#icon-slick-l"></use></svg></button>',
+                    nextArrow: '<button type="button" class="my-slick-next"><svg class="icon icon-slick-r"><use xlink:href="#icon-slick-r"></use></svg></button>',
                 }
             },
             {
@@ -63,12 +67,16 @@ $(document).ready(function(){
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1001,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots:true,
+                    arrows: true,
+                    dotsClass: 'my-slick-dots',
+                    prevArrow: '<button type="button" class="my-slick-prev"><svg class="icon icon-slick-l"><use xlink:href="#icon-slick-l"></use></svg></button>',
+                    nextArrow: '<button type="button" class="my-slick-next"><svg class="icon icon-slick-r"><use xlink:href="#icon-slick-r"></use></svg></button>',
+                    infinite: false,
                 }
             },
             {
@@ -101,10 +109,10 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="my-slick-next"><svg class="icon icon-slick-r"><use xlink:href="#icon-slick-r"></use></svg></button>',
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1001,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                 }
             },
             {

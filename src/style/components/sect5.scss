@@ -37,7 +37,25 @@
     width: 300px;
   }
 }
-@media(max-width: 1000px) {}
+@media(max-width: 1000px) {
+  .sect5 .form p {
+    width: 230px;
+  }
+  .sect5 .flex .item img{
+    width: 100px;
+  }
+  .sect5 .flex .item p{
+    line-height: 24px;
+  }
+  .sect5 form input{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .sect5 form input.button{
+    //font-size: 14px;
+    padding: 15px 15px;
+  }
+}
 @media (max-width: 767px) {}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}

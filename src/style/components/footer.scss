@@ -88,8 +88,25 @@
     }
   }
 }
-@media (max-width: 1200px) {}
-@media(max-width: 1000px) {}
+@media (max-width: 1200px) {
+
+}
+@media(max-width: 1000px) {
+  .footer .flex{
+    justify-content: space-between;
+  }
+  .footer .left {
+    width: 140px;
+    margin-left: 60px;
+  }
+  .footer .center {
+    max-width: 270px;
+    text-align: center;
+  }
+  .footer .right {
+    max-width: 200px;
+  }
+}
 @media (max-width: 767px) {}
 @media (max-width: 640px) {}
 @media (max-width: 479px) {}
