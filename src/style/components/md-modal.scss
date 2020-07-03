@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   width: 50%;
-  max-width: $max-width-modal-1;
-  min-width: $min-width-modal-1;
+  max-width: $max-width-modal;
+  min-width: $min-width-modal;
   height: auto;
   z-index: 2000;
   visibility: hidden;
@@ -67,6 +67,7 @@ button.md-close {
   width: 30px !important;
   border: none;
   height: 30px;
+  cursor: pointer;
   margin-left: 90%;
   span {
     width: 30px;
@@ -85,16 +86,40 @@ button.md-close {
       margin-top: -1px;
     }
   }
+  &:hover{
+    span{
+      background-color: #fff;
+      transition: all .5s ease;
+    }
+  }
 }
 
 /* Content styles */
-#modal-1{
-  .md-content {
-    color: $color-modal-1;
-    background: $bg-modal-1;
-    position: relative;
-    border-radius: 3px;
+.md-content {
+  text-align: center;
+  color: $color-modal-1;
+  background: $bg-modal-1;
+  position: relative;
+  border-radius: 3px;
+  margin: 0 auto;
+  .md-close{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+  form{
     margin: 0 auto;
+  }
+  .content{
+    padding-bottom: 40px;
+    .logo{
+      padding-top: 80px;
+    }
+  }
+  .content > p{
+    font-size: 22px;
+    line-height: 28px;
+    padding: 25px 0;
   }
 }
 /* Individual modal styles with animations/transitions */

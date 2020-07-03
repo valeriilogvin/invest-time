@@ -25,6 +25,9 @@ $(document).ready(function(){
         infinite: false,
         slidesToShow: 4,
         slidesToScroll: 1,
+        dotsClass: 'my-slick-dots',
+        prevArrow: '<button type="button" class="my-slick-prev"><svg class="icon icon-slick-l"><use xlink:href="#icon-slick-l"></use></svg></button>',
+        nextArrow: '<button type="button" class="my-slick-next"><svg class="icon icon-slick-r"><use xlink:href="#icon-slick-r"></use></svg></button>',
         responsive: [
             {
                 breakpoint: 1001,
@@ -34,9 +37,6 @@ $(document).ready(function(){
                     infinite: true,
                     dots:true,
                     arrows: true,
-                    dotsClass: 'my-slick-dots',
-                    prevArrow: '<button type="button" class="my-slick-prev"><svg class="icon icon-slick-l"><use xlink:href="#icon-slick-l"></use></svg></button>',
-                    nextArrow: '<button type="button" class="my-slick-next"><svg class="icon icon-slick-r"><use xlink:href="#icon-slick-r"></use></svg></button>',
                 }
             },
             {
@@ -46,9 +46,6 @@ $(document).ready(function(){
                     slidesToScroll: 1,
                     dots:true,
                     arrows: true,
-                    dotsClass: 'my-slick-dots',
-                    prevArrow: '<button type="button" class="my-slick-prev"><svg class="icon icon-slick-l"><use xlink:href="#icon-slick-l"></use></svg></button>',
-                    nextArrow: '<button type="button" class="my-slick-next"><svg class="icon icon-slick-r"><use xlink:href="#icon-slick-r"></use></svg></button>',
                 }
             }
             // You can unslick at a given breakpoint now by adding:

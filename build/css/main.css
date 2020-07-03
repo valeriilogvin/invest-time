@@ -360,7 +360,7 @@ button.slick-arrow {
   top: 50%;
   left: 50%;
   width: 50%;
-  max-width: 630px;
+  max-width: 540px;
   min-width: 320px;
   height: auto;
   z-index: 2000;
@@ -383,7 +383,7 @@ button.slick-arrow {
   left: 0;
   z-index: 1000;
   opacity: 0;
-  background: rgba(35, 57, 255, 0.8);
+  background: #002255;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
@@ -414,6 +414,7 @@ button.md-close {
   width: 30px !important;
   border: none;
   height: 30px;
+  cursor: pointer;
   margin-left: 90%; }
   button.md-close span {
     width: 30px;
@@ -429,14 +430,34 @@ button.md-close {
       -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
       margin-top: -1px; }
+  button.md-close:hover span {
+    background-color: #fff;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
 
 /* Content styles */
-#modal-1 .md-content {
+.md-content {
+  text-align: center;
   color: #ffffff;
-  background: #e74c3c;
+  background: #003584;
   position: relative;
   border-radius: 3px;
   margin: 0 auto; }
+  .md-content .md-close {
+    position: absolute;
+    top: 25px;
+    right: 25px; }
+  .md-content form {
+    margin: 0 auto; }
+  .md-content .content {
+    padding-bottom: 40px; }
+    .md-content .content .logo {
+      padding-top: 80px; }
+  .md-content .content > p {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 25px 0; }
 
 /* Individual modal styles with animations/transitions */
 button.menu-btn {
@@ -580,9 +601,6 @@ button.menu-btn {
   z-index: 999; }
 
 .bs-navbar {
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
   -webkit-box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
   padding: 20px 0;
