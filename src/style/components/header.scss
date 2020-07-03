@@ -236,9 +236,15 @@ button.slick-arrow{
 .my-slick-dots li.slick-active button {
   background: #2339FF; }
 //slick-style : END
+
+
 @media (max-width: 1200px) {
   .conteiner {
     width: 960px;
+  }
+  h2{
+    font-size: 34px;
+    line-height: 42px;
   }
 }
 @media(max-width: 1000px) {

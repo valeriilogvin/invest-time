@@ -281,7 +281,10 @@ button.slick-arrow {
 
 @media (max-width: 1200px) {
   .conteiner {
-    width: 960px; } }
+    width: 960px; }
+  h2 {
+    font-size: 34px;
+    line-height: 42px; } }
 
 @media (max-width: 1000px) {
   section {
@@ -292,8 +295,8 @@ button.slick-arrow {
     font-size: 50px;
     line-height: 60px; }
   h2 {
-    font-size: 40px;
-    line-height: 50px; }
+    font-size: 34px;
+    line-height: 42px; }
   h3 {
     font-size: 18px;
     line-height: 24px; }
@@ -536,27 +539,47 @@ button.menu-btn {
   color: #ffffff; }
 
 /* pushy style : END ================================= */
-.sect1 {
-  background: url("../img/s1-bg.jpg") top center no-repeat;
-  padding: 55px 0 140px; }
-  .sect1 .header .flex {
+.header {
+  position: fixed;
+  top: 55px;
+  width: 100%; }
+  .header .flex {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .sect1 .header ul li {
+  .header ul li {
     display: inline-block; }
-    .sect1 .header ul li a {
+    .header ul li a {
       font-size: 22px;
       line-height: 26px;
       font-family: 'SF UI Regular', sans-serif; }
-      .sect1 .header ul li a:hover {
+      .header ul li a:hover {
         color: #23B0FF;
         -webkit-transition: all .5s ease;
         -o-transition: all .5s ease;
         transition: all .5s ease; }
-    .sect1 .header ul li + li {
+    .header ul li + li {
       margin-left: 35px; }
+
+.position-fixed {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+
+.bs-navbar {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  background-color: #2339FF; }
+
+.sect1 {
+  background: url("../img/s1-bg.jpg") top center no-repeat;
+  padding: 55px 0 140px; }
   .sect1 h1, .sect1 h2, .sect1 h3 {
     color: #fff; }
   .sect1 h1 {
@@ -584,6 +607,25 @@ button.menu-btn {
       line-height: 28px;
       margin-bottom: 24px; }
 
+@media (max-width: 1200px) {
+  .sect1 {
+    padding: 50px 0 90px; }
+  .sect1 h1 {
+    padding-top: 75px;
+    letter-spacing: 1px;
+    font-size: 75px;
+    line-height: 85px; }
+  .sect1 h2 {
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 13px; }
+  .sect1 h3 {
+    font-size: 24px;
+    line-height: 28px; }
+  .sect1 .form > p {
+    font-size: 20px;
+    line-height: 26px; } }
+
 .sect2 {
   background-color: #F8F8F8; }
   .sect2 .conteiner {
@@ -600,6 +642,15 @@ button.menu-btn {
       padding-top: 75px; }
   .sect2 a.button {
     margin-top: 23px; }
+
+@media (max-width: 1200px) {
+  .sect2 .conteiner {
+    background-size: 450px; }
+  .sect2 .r-block {
+    width: 55%; }
+  .sect2 p {
+    font-size: 20px;
+    line-height: 26px; } }
 
 .sect3 {
   text-align: center; }
@@ -684,6 +735,11 @@ button.menu-btn {
   .sect4-slick .slide3 h1.title, .sect4-slick .slide3 h2.text {
     color: #fff; }
 
+@media (max-width: 1200px) {
+  .sect4-slick .slide {
+    width: 295px !important;
+    padding: 35px 20px; } }
+
 .sect5 {
   padding: 90px 0 74px; }
   .sect5 h2 {
@@ -713,6 +769,10 @@ button.menu-btn {
       border: none; }
   .sect5 .form p {
     width: 349px; }
+
+@media (max-width: 1200px) {
+  .sect5 .form p {
+    width: 300px; } }
 
 .sect6 {
   background: #F8F8F8; }
@@ -777,6 +837,14 @@ button.menu-btn {
       left: 0;
       top: 0; }
 
+@media (max-width: 1200px) {
+  .sect6-slick .slide {
+    width: 295px !important;
+    padding: 40px 20px 0 25px; }
+  .sect6-slick h4 {
+    font-size: 24px;
+    line-height: 32px; } }
+
 .sect7 h3 {
   color: #237BFF;
   padding-top: 24px; }
@@ -836,6 +904,10 @@ button.menu-btn {
     color: #237BFF;
     font-family: "SF UI Light", sans-serif;
     padding-left: 20px; }
+
+@media (max-width: 1200px) {
+  .sect7 .logo-img img {
+    width: 100%; } }
 
 .footer {
   background: #237BFF;

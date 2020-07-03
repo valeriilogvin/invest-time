@@ -1,3 +1,21 @@
+var navbar = document.getElementById('navbarId');
+
+var offsetNavbar = navbar.offsetTop;
+
+window.onscroll = function(e) {
+    if(window.scrollY >= offsetNavbar) {
+        if(!navbar.classList.contains('position-fixed')) {
+            navbar.classList.add('position-fixed');
+            navbar.classList.add('bs-navbar');
+        }
+    } else {
+        if(navbar.classList.contains('position-fixed')) {
+            navbar.classList.remove('position-fixed');
+            navbar.classList.remove('bs-navbar');
+        }
+    }
+};
+
 $(document).ready(function(){
     $(".input-mask-s").inputmask("+38 (999) 999-99-99");
 

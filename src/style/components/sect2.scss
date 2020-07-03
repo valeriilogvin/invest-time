@@ -21,3 +21,21 @@
     margin-top: 23px;
   }
 }
+
+@media (max-width: 1200px) {
+  .sect2 .conteiner {
+    background-size: 450px;
+  }
+  .sect2 .r-block {
+    width: 55%;
+  }
+  .sect2 p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media(max-width: 1000px) {}
+@media (max-width: 767px) {}
+@media (max-width: 640px) {}
+@media (max-width: 479px) {}
+@media (max-width: 380px) {}
