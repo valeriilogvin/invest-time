@@ -110,7 +110,37 @@
   .sect7 .icon-slick-l {
     left: 38%;
   }
+  .sect7-slick_slide{
+    margin-right: 0;
+  }
 }
-@media (max-width: 640px) {}
-@media (max-width: 479px) {}
-@media (max-width: 380px) {}
+@media (max-width: 640px) {
+  .sect7 .icon-slick-r {
+    right: 34%;
+  }
+  .sect7 .icon-slick-l {
+    left: 34%;
+  }
+}
+@media (max-width: 479px) {
+  .sect7 .icon-slick-r {
+    right: 30%;
+  }
+  .sect7 .icon-slick-l {
+    left: 30%;
+  }
+  .sect7-slick_slide p.total{
+    br{
+      display: none;
+    }
+  }
+}
+@media (max-width: 380px) {
+  .sect7 .icon-slick-r {
+    right: 26%;
+  }
+  .sect7 .icon-slick-l {
+    left: 26%;
+  }
+
+}

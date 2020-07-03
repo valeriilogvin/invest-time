@@ -63,6 +63,28 @@
     text-align: left;
   }
 }
-@media (max-width: 640px) {}
-@media (max-width: 479px) {}
+@media (max-width: 640px) {
+  .sect2 .conteiner{
+    background: none;
+  }
+  .sect2 h2{
+    padding-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 479px) {
+  .sect2 h2 {
+    padding-bottom: 15px;
+  }
+  .sect2 p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .sect2 p + p {
+    padding-top: 25px;
+  }
+  .sect2 a.button {
+    margin-top: 20px;
+  }
+}
 @media (max-width: 380px) {}

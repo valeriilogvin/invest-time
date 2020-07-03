@@ -153,6 +153,9 @@
   }
 }
 @media (max-width: 640px) {
+  .sect1 .header .logo img{
+    width: 130px;
+  }
   .sect1 .menu-btn.display_none{
     display: block;
   }

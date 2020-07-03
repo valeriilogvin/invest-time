@@ -128,6 +128,10 @@
     display: none;
   }
 }
-@media (max-width: 640px) {}
-@media (max-width: 479px) {}
-@media (max-width: 380px) {}
+@media (max-width: 479px) {
+  .footer{
+    &:before{
+      display: none;
+    }
+  }
+}
