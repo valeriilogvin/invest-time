@@ -1268,6 +1268,52 @@ button.menu-btn {
 .sect7 .logo-img {
   padding: 40px 0; }
 
+.sect7 .flex.logo {
+  padding: 40px 0 60px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .sect7 .flex.logo img {
+    padding: 10px 10px;
+    height: 55px; }
+  .sect7 .flex.logo .sect7-logo_1 {
+    height: 80px; }
+  .sect7 .flex.logo .sect7-logo_3 {
+    height: 80px; }
+  .sect7 .flex.logo .sect7-logo_5 {
+    height: 35px; }
+  .sect7 .flex.logo .sect7-logo_8 {
+    height: 40px; }
+  .sect7 .flex.logo .sect7-logo_9 {
+    height: 35px; }
+  .sect7 .flex.logo .sect7-logo_11 {
+    height: 25px;
+    padding: 0 15px; }
+  .sect7 .flex.logo .sect7-logo_12 {
+    height: 30px;
+    padding: 0 15px; }
+  .sect7 .flex.logo .sect7-logo_13 {
+    height: 35px; }
+  .sect7 .flex.logo .sect7-logo_14 {
+    height: 45px;
+    padding: 0 15px; }
+  .sect7 .flex.logo .sect7-logo_16 {
+    height: 30px; }
+  .sect7 .flex.logo .sect7-logo_17 {
+    height: 30px; }
+  .sect7 .flex.logo .sect7-logo_18 {
+    height: 40px; }
+  .sect7 .flex.logo .sect7-logo_19 {
+    height: 30px; }
+
 .reviews h2 {
   margin-bottom: 50px; }
 
@@ -1352,7 +1398,9 @@ button.menu-btn {
   .sect7 .icon-slick-l {
     left: 38%; }
   .sect7-slick_slide {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .sect7 .flex.logo img {
+    max-height: 30px; } }
 
 @media (max-width: 640px) {
   .sect7 .icon-slick-r {

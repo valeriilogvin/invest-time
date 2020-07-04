@@ -7,6 +7,58 @@
     padding: 40px 0;
   }
 }
+//logo
+.sect7 .flex.logo{
+  padding: 40px 0 60px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  img{
+    padding: 10px 10px;
+    height: 55px;
+    //max-width: 100px;
+    //height: auto;
+    //&+img{
+    //  padding-left: 20px;
+    //}
+  }
+  .sect7-logo_1{
+    height: 80px;
+  }
+  .sect7-logo_2{}
+  .sect7-logo_3{
+    height: 80px;
+  }
+  .sect7-logo_4{}
+  .sect7-logo_5{    height: 35px;}
+  .sect7-logo_6{}
+  .sect7-logo_7{}
+  .sect7-logo_8{height: 40px;}
+  .sect7-logo_9{height: 35px;}
+  .sect7-logo_10{}
+  .sect7-logo_11{
+    height: 25px;
+    padding: 0 15px;
+  }
+  .sect7-logo_12{
+    height: 30px;
+    padding: 0 15px;
+  }
+  .sect7-logo_13{height: 35px;}
+  .sect7-logo_14{
+    height: 45px;
+    padding: 0 15px;
+
+  }
+  .sect7-logo_15{}
+  .sect7-logo_16{height: 30px;}
+  .sect7-logo_17{height: 30px;}
+  .sect7-logo_18{height: 40px;}
+  .sect7-logo_19{height: 30px;}
+  .sect7-logo_20{}
+}
+
+//logo : END
 .sect7-slick{
 
 }
@@ -112,6 +164,9 @@
   }
   .sect7-slick_slide{
     margin-right: 0;
+  }
+  .sect7 .flex.logo img {
+    max-height: 30px;
   }
 }
 @media (max-width: 640px) {
