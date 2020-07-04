@@ -679,12 +679,49 @@ button.menu-btn {
     padding: 15px 0; } }
 
 @media (max-width: 640px) {
+  .sect1 {
+    background: #002255;
+    text-align: center; }
+    .sect1 form {
+      margin: 0 auto; }
   .sect1 .header .logo img {
     width: 130px; }
   .sect1 .menu-btn.display_none {
     display: block; }
   .sect1 .header nav {
     display: none; } }
+
+@media (max-width: 479px) {
+  .sect1 {
+    padding: 30px 0 40px; }
+    .sect1 h1 {
+      font-size: 48px;
+      line-height: 58px;
+      padding-top: 55px; }
+  .sect1 h2 {
+    font-size: 16px;
+    line-height: 30px; }
+  .sect1 h3 br {
+    display: none; }
+  .sect1 .form > p {
+    font-size: 16px;
+    line-height: 22px; } }
+
+@media (max-width: 380px) {
+  .sect1 h1 {
+    letter-spacing: 0;
+    font-size: 46px;
+    line-height: 58px;
+    padding: 55px 0 10px; }
+  .sect1 h2 {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 40px 20px; }
+  .sect1 h3 {
+    font-size: 16px;
+    line-height: 22px; }
+  .sect1 .form {
+    margin-top: 30px; } }
 
 .sect2 {
   background-color: #F8F8F8; }
@@ -1085,7 +1122,9 @@ button.menu-btn {
   .sect5 .form p {
     width: 100%; }
   .sect5 .form h3 br {
-    display: none; } }
+    display: none; }
+  .sect5 .flex .item p {
+    padding: 5px 0 0; } }
 
 .sect6 {
   background: #F8F8F8; }
