@@ -588,6 +588,9 @@ button.menu-btn {
   line-height: 21px;
   color: #2D2D2D; }
 
+.pushy .contacts a:hover {
+  color: #2339FF; }
+
 /* pushy style : END ================================= */
 .sect1 {
   background: url("../img/s1-bg.jpg") top center no-repeat;

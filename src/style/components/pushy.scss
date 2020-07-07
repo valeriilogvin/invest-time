@@ -123,5 +123,12 @@ button.menu-btn {
     line-height: 21px;
     color: #2D2D2D;
   }
+  .contacts{
+    a{
+      &:hover{
+        color: #2339FF;
+      }
+    }
+  }
 }
 /* pushy style : END ================================= */
