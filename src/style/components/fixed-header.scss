@@ -87,15 +87,15 @@
     a.button{
       display: none;
     }
+    .fixed-header a.tel {
+      font-size: 14px;
+    }
   }
 }
 
 @media (max-width: 380px) {
   .fixed-header a.logo img {
     width: 100px;
-  }
-  .fixed-header a.tel {
-    font-size: 14px;
   }
   button.menu-btn span{
     margin-left: 20px;

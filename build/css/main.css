@@ -69,7 +69,14 @@ body {
   font-family: "SF UI Regular", sans-serif;
   font-size: 16px;
   color: #333333;
-  line-height: 1;
+  line-height: 1;a {
+                   font-family: "SF UI Bold", sans-serif;
+                   font-weight: bold;
+                   color: #fff;
+                   font-size: 16px;
+                   line-height: 19px;
+                   display: inline-block;
+                   text-decoration: none; }
   line-height: 19px;
   background-color: #ffffff;
   -webkit-tap-highlight-color: transparent;
@@ -78,14 +85,7 @@ body {
   -text-size-adjust: none;
   -webkit-appearance: none; }
 
-a {
-  font-family: "SF UI Bold", sans-serif;
-  font-weight: bold;
-  color: #fff;
-  font-size: 16px;
-  line-height: 19px;
-  display: inline-block;
-  text-decoration: none; }
+
   a:hover {
     color: #fff;
     text-decoration: none; }
@@ -929,13 +929,13 @@ button.menu-btn {
   .fixed-header a.tel {
     display: block; }
   .fixed-header a.button {
-    display: none; } }
+    display: none; }
+  .fixed-header .fixed-header a.tel {
+    font-size: 14px; } }
 
 @media (max-width: 380px) {
   .fixed-header a.logo img {
     width: 100px; }
-  .fixed-header a.tel {
-    font-size: 14px; }
   button.menu-btn span {
     margin-left: 20px; } }
 

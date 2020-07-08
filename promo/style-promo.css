@@ -1,0 +1,515 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block; }
+
+ol, ul {
+    list-style: none; }
+
+blockquote, q {
+    quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+/* End of Eric Meyer's CSS Reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block; }
+
+textarea {
+    overflow: hidden; }
+.conteiner {
+    width: 1120px;
+    margin: auto;
+    padding: 0 20px; }
+form {
+    width: 349px; }
+form p {
+    width: 100%; }
+form span {
+    width: inherit; }
+form input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: inherit;
+    -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.16);
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    border-radius: 2px;
+    padding: 15px 25px;
+    margin-bottom: 20px; }
+form input {
+    border: none;
+    outline: none; }
+form input.button {
+    background: #2339FF;
+    border-radius: 27px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'SF UI Bold', sans-serif;
+    cursor: pointer;
+    border: none; }
+form input.button:hover {
+    background: #23B0FF;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+@media (max-width: 1400px) {
+    h2 {
+        font-size: 34px;
+        line-height: 42px; } }
+
+@media (max-width: 1200px) {
+    .conteiner {
+        width: 960px; } }
+
+@media (max-width: 1000px) {
+    section {
+        padding: 60px 0; }
+    .conteiner {
+        width: 740px; }
+    h1 {
+        font-size: 50px;
+        line-height: 60px; }
+    section h2 {
+        font-size: 28px;
+        line-height: 36px; }
+    h3 {
+        font-size: 18px;
+        line-height: 24px; }
+    h4 {
+        font-size: 50px;
+        line-height: 60px; }
+    a.button {
+        width: 300px; } }
+
+@media (max-width: 767px) {
+    section {
+        padding: 50px 0; }
+    .conteiner {
+        width: 620px;
+        padding: 0 10px; }
+    section h1 {
+        font-size: 40px;
+        line-height: 50px; }
+    section h2 {
+        font-size: 24px;
+        line-height: 32px; }
+    section h2 br {
+        display: none; }
+    section h3 {
+        font-size: 18px;
+        line-height: 22px; }
+    h4 {
+        font-size: 40px;
+        line-height: 50px; } }
+
+@media (max-width: 640px) {
+    .conteiner {
+        width: 460px; } }
+
+@media (max-width: 479px) {
+    section {
+        padding: 30px 0; }
+    .conteiner {
+        width: 360px; }
+    section h1 {
+        font-size: 30px;
+        line-height: 20px; }
+    section h2 {
+        font-size: 18px;
+        line-height: 26px; }
+    section h3 {
+        font-size: 16px;
+        line-height: 22px; }
+    section h4 {
+        font-size: 50px;
+        line-height: 60px; }
+    .my-slick-dots {
+        margin-top: 0; } }
+
+@media (max-width: 380px) {
+    .conteiner {
+        width: 300px; } }
+
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 540px;
+    min-width: 320px;
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+
+.md-show {
+    visibility: visible; }
+
+.md-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    background: #002255;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.md-show ~ .md-overlay {
+    opacity: 1;
+    visibility: visible; }
+
+/* Effect 1: Fade in and scale up */
+.md-effect-1 .md-content {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.md-show.md-effect-1 .md-content {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+
+button.md-close {
+    outline: none;
+    background: none !important;
+    width: 30px !important;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 90%; }
+button.md-close span {
+    width: 30px;
+    height: 1px;
+    background-color: #b3b3b3;
+    display: block; }
+button.md-close span:first-child {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+button.md-close span:last-child {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -1px; }
+button.md-close:hover span {
+    background-color: #fff;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+/* Content styles */
+.md-content {
+    text-align: center;
+    color: #ffffff;
+    background: #003584;
+    position: relative;
+    border-radius: 3px;
+    margin: 0 auto; }
+.md-content .md-close {
+    position: absolute;
+    top: 25px;
+    right: 25px; }
+
+.md-content p{
+    font-family: "SF UI Regular", sans-serif;
+}
+.md-content form {
+    margin: 0 auto; }
+.md-content .content {
+    padding-bottom: 40px; }
+.md-content .content .logo {
+    padding-top: 80px; }
+.md-content .content > p {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 25px 0; }
+
+/* Individual modal styles with animations/transitions */
+@media (max-width: 1000px) {
+    .md-modal {
+        width: 60%; } }
+
+@media (max-width: 640px) {
+    .md-modal {
+        width: 80%; }
+    .md-content .content {
+        padding: 40px; }
+    .md-content .content .logo {
+        padding-top: 20px; } }
+
+@media (max-width: 480px) {
+    .md-content form {
+        width: 100%; }
+    .md-content .content {
+        padding: 30px; }
+    .md-content .content > p br {
+        display: none; }
+    .md-content .content .logo {
+        padding-top: 35px; } }
+a {
+    text-decoration: none; }
+a.button {
+    width: 350px;
+    margin-top: 40px;
+    background: #2339FF;
+    border-radius: 27px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'SF UI Bold', sans-serif;
+    cursor: pointer;
+    border: none;
+    padding: 17px 0;
+    text-align: center;
+    display: inline-block; }
+a.button:hover {
+    background: #23B0FF;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+a.button2{
+    margin-top: 20px;
+    padding: 14px 0;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 27px;
+    background: none;
+    display: block;
+}
+a.button2:hover{
+    background-color: #fff;
+    color: #333333;
+}
+.sect1 {
+    background: url("img/bg-promo.jpg") top center no-repeat;
+    padding: 55px 0 140px;
+    text-align: right;}
+.sect1 .header{
+    text-align: left;
+}
+.text-block{
+    display: inline-block;
+    text-align: left;
+    padding-right: 40px;
+}
+.sect1 h1, .sect1 h2, .sect1 h3 {
+color: #fff; }
+.sect1 h1 {
+    font-family: "SF UI Bold", sans-serif;
+    text-transform: uppercase;
+    padding-top: 85px;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 2px; }
+.sect1 p.text {
+    font-family: "SF UI Light", sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+    padding-bottom: 25px;
+    font-size: 28px;
+    line-height: 33px; }
+.sect1 p.text span{
+    font-family: "SF UI Bold", sans-serif;
+
+}
+.sect1 .stat span.left{
+    font-size: 40px;
+    width: 100px;
+    display: inline-block;
+    color: #ffffff;
+    line-height: 48px;
+    font-family: "SF UI Black", sans-serif;
+
+}
+.sect1 .stat p{
+    display: flex;
+    align-items: center;
+}
+.sect1 .stat p+p{
+    padding-top: 10px;
+}
+.sect1 .stat span.right{
+    font-family: "SF UI Regular", sans-serif;
+
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 25px;
+    color: #ffffff;
+}
+
+@media (max-width: 1400px) {
+    .sect1 {
+        padding: 25px 0 100px;
+    }
+
+    .sect1 h1 {
+        padding-top: 30px;
+        letter-spacing: 2px;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .sect1 p.text {
+        font-family: "SF UI Light", sans-serif;
+        color: #ffffff;
+        font-weight: 300;
+        padding-bottom: 25px;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .sect1 .stat span.left {
+        font-size: 35px;
+        width: 80px;
+    }
+    .sect1 .stat p+p{
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sect1 {
+        padding: 50px 0 90px; }
+
+    .sect1 .header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .text-block {
+        padding-right: 66px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sect1{
+        text-align: center;
+    }
+    .text-block {
+        text-align: center;
+        padding-right: 0;
+    }
+    a.button2 {
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .sect1 {
+        background: url("img/s1-bg-mob.jpg") top center no-repeat;
+        text-align: center; }}
+
+@media (max-width: 479px) {
+    .sect1 h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .sect1 p.text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .sect1 .stat span.left {
+        font-size: 28px;
+    }
+    .sect1 .stat span.right {
+        font-family: "SF UI Regular", sans-serif;
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+@media (max-width: 380px) {
+    .sect1{}
+    .sect1 a.button{
+        width: 100%;
+    }
+    .sect1 p.text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .sect1 .stat span.left {
+        width: 95px;
+    }
+    .sect1 .stat span.right {
+        width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: left;
+    }
+}
+@font-face {
+    font-family: 'SF UI Black';
+    font-weight: normal;
+    src: local("SF UI Black"), url("fonts/SFUIDisplay-Black.woff") format("woff"); }
+
+@font-face {
+    font-family: 'SF UI Bold';
+    font-weight: normal;
+    src: local("SF UI Bold"), url("fonts/SFUIDisplay-Bold.woff") format("woff"); }
+
+@font-face {
+    font-family: 'SF UI Heavy';
+    font-weight: normal;
+    src: local("SF UI Heavy"), url("fonts/SFUIDisplay-Heavy.woff") format("woff"); }
+
+@font-face {
+    font-family: 'SF UI Light';
+    font-weight: normal;
+    src: local("SF UI Light"), url("fonts/SFUIDisplay-Light.woff") format("woff"); }
+
+@font-face {
+    font-family: 'SF UI Regular';
+    font-weight: normal;
+    src: local("SF UI Regular"), url("fonts/SFUIDisplay-Regular.woff") format("woff"); }
+
+@font-face {
+    font-family: 'SF UI Semibold';
+    font-weight: normal;
+    src: local("SF UI Semibold"), url("fonts/SFUIDisplay-Semibold.woff") format("woff"); }
