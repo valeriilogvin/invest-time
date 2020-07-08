@@ -123,3 +123,35 @@ button.md-close {
   }
 }
 /* Individual modal styles with animations/transitions */
+@media (max-width: 1000px) {
+  .md-modal{
+    width: 60%;
+  }
+}
+@media (max-width: 640px) {
+  .md-modal{
+    width: 80%;
+  }
+  .md-content .content {
+    padding: 40px;
+  }
+  .md-content .content .logo {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .md-content form {
+    width: 100%;
+  }
+  .md-content .content {
+    padding: 30px;
+  }
+  .md-content .content > p{
+    br{
+      display: none;
+    }
+  }
+  .md-content .content .logo {
+    padding-top: 35px;
+  }
+}

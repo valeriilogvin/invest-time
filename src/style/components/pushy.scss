@@ -131,4 +131,10 @@ button.menu-btn {
     }
   }
 }
+@media(max-width: 479px) {
+  .pushy .contacts a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 /* pushy style : END ================================= */

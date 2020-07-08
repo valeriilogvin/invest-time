@@ -104,11 +104,13 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 38px;
-  line-height: 45px; }
+  line-height: 45px;
+  text-align: center; }
   h2 span {
     color: #237BFF; }
 
 h3 {
+  text-align: center;
   text-transform: none;
   padding-top: 14px;
   font-family: "SF UI Regular", sans-serif;
@@ -279,12 +281,14 @@ button.slick-arrow {
 .my-slick-dots li.slick-active button {
   background: #2339FF; }
 
-@media (max-width: 1200px) {
-  .conteiner {
-    width: 960px; }
+@media (max-width: 1400px) {
   h2 {
     font-size: 34px;
     line-height: 42px; } }
+
+@media (max-width: 1200px) {
+  .conteiner {
+    width: 960px; } }
 
 @media (max-width: 1000px) {
   section {
@@ -460,6 +464,28 @@ button.md-close {
     padding: 25px 0; }
 
 /* Individual modal styles with animations/transitions */
+@media (max-width: 1000px) {
+  .md-modal {
+    width: 60%; } }
+
+@media (max-width: 640px) {
+  .md-modal {
+    width: 80%; }
+  .md-content .content {
+    padding: 40px; }
+  .md-content .content .logo {
+    padding-top: 20px; } }
+
+@media (max-width: 480px) {
+  .md-content form {
+    width: 100%; }
+  .md-content .content {
+    padding: 30px; }
+  .md-content .content > p br {
+    display: none; }
+  .md-content .content .logo {
+    padding-top: 35px; } }
+
 /* pushy style */
 .pushy-left {
   -webkit-transform: translate3d(-280px, 0, 0);
@@ -591,6 +617,11 @@ button.menu-btn {
 .pushy .contacts a:hover {
   color: #2339FF; }
 
+@media (max-width: 479px) {
+  .pushy .contacts a {
+    font-size: 18px;
+    line-height: 26px; } }
+
 /* pushy style : END ================================= */
 .sect1 {
   background: url("../img/s1-bg.jpg") top center no-repeat;
@@ -623,8 +654,10 @@ button.menu-btn {
   .sect1 h2 {
     font-size: 32px;
     line-height: 38px;
-    padding-bottom: 13px; }
+    padding-bottom: 13px;
+    text-align: left; }
   .sect1 h3 {
+    text-align: left;
     padding-top: 0;
     font-size: 28px;
     line-height: 33px;
@@ -641,6 +674,30 @@ button.menu-btn {
       font-size: 22px;
       line-height: 28px;
       margin-bottom: 24px; }
+
+@media (max-width: 1400px) {
+  .sect1 {
+    padding: 25px 0 100px; }
+  .sect1 .header ul li a {
+    font-size: 18px; }
+  .sect1 h1 {
+    padding-top: 50px;
+    letter-spacing: 2px;
+    font-size: 65px;
+    line-height: 75px; }
+  .sect1 h2 {
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 13px; }
+  .sect1 .form {
+    margin-top: 45px; }
+  .sect1 .form > p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px; }
+  .sect1 h3 {
+    font-size: 22px;
+    line-height: 28px; } }
 
 @media (max-width: 1200px) {
   .sect1 {
@@ -679,7 +736,7 @@ button.menu-btn {
 
 @media (max-width: 767px) {
   .sect1 {
-    background-position: -555px 0; }
+    background-position: -750px 0; }
   .sect1 h1 {
     font-size: 60px;
     line-height: 70px; }
@@ -745,7 +802,8 @@ button.menu-btn {
     width: 49%;
     margin-left: auto; }
   .sect2 h2 {
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    text-align: left; }
   .sect2 p {
     font-size: 22px;
     line-height: 28px; }
@@ -787,14 +845,15 @@ button.menu-btn {
 
 @media (max-width: 640px) {
   .sect2 .conteiner {
-    background: none; }
+    background-position: 50% 75px; }
   .sect2 h2 {
     padding-left: 0;
+    padding-bottom: 130px;
     text-align: center; } }
 
 @media (max-width: 479px) {
-  .sect2 h2 {
-    padding-bottom: 15px; }
+  .sect2 .conteiner {
+    background-position: 50% 60px; }
   .sect2 p {
     font-size: 16px;
     line-height: 22px; }
@@ -802,6 +861,10 @@ button.menu-btn {
     padding-top: 25px; }
   .sect2 a.button {
     margin-top: 20px; } }
+
+@media (max-width: 380px) {
+  .sect2 .conteiner {
+    background-position: 50% 85px; } }
 
 .fixed-header {
   padding: 0; }
@@ -818,7 +881,7 @@ button.menu-btn {
     .fixed-header .header ul li {
       display: inline-block; }
       .fixed-header .header ul li a {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
         font-family: 'SF UI Regular', sans-serif; }
         .fixed-header .header ul li a:hover {
@@ -839,11 +902,18 @@ button.menu-btn {
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
   .fixed-header .bs-navbar {
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: #002255; }
   .fixed-header a.tel {
     display: none;
     margin-left: auto; }
+  .fixed-header a.logo img {
+    width: 170px; }
+  .fixed-header a.button {
+    width: 270px;
+    padding: 13px 0; }
+  .fixed-header button.menu-btn span {
+    margin-left: 10px; }
 
 @media (max-width: 1000px) {
   .fixed-header a.logo img {
@@ -864,6 +934,8 @@ button.menu-btn {
 @media (max-width: 380px) {
   .fixed-header a.logo img {
     width: 100px; }
+  .fixed-header a.tel {
+    font-size: 14px; }
   button.menu-btn span {
     margin-left: 20px; } }
 
@@ -880,22 +952,10 @@ button.menu-btn {
       border-radius: 50%; }
     .sect3 .worker-block h4.name {
       position: relative;
-      margin-top: 40px;
+      margin-top: 20px;
       font-size: 18px;
       line-height: 21px;
       text-transform: uppercase; }
-      .sect3 .worker-block h4.name:before {
-        content: '';
-        border-radius: 50%;
-        position: absolute;
-        top: -20px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
-        width: 6px;
-        height: 6px;
-        background: #237BFF; }
     .sect3 .worker-block p {
       padding: 7px 10px 0; }
 
@@ -976,10 +1036,10 @@ button.menu-btn {
       .sect4-slick .slide .list span:last-child {
         font-family: "SF UI Bold", sans-serif; }
 
-.sect4-slick .slide3 {
+.sect4-slick .slide3, .sect4-slick .slide1 {
   background-color: #237BFF;
   color: #fff; }
-  .sect4-slick .slide3 h1.title, .sect4-slick .slide3 h2.text {
+  .sect4-slick .slide3 h1.title, .sect4-slick .slide3 h2.text, .sect4-slick .slide1 h1.title, .sect4-slick .slide1 h2.text {
     color: #fff; }
 
 @media (max-width: 1200px) {
@@ -1054,7 +1114,8 @@ button.menu-btn {
     .sect5 .flex .item p {
       padding-top: 25px; }
   .sect5 .form h3 {
-    padding: 48px 0 28px; }
+    padding: 48px 0 28px;
+    text-align: left; }
   .sect5 .form form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1072,6 +1133,16 @@ button.menu-btn {
       border: none; }
   .sect5 .form p {
     width: 349px; }
+
+@media (max-width: 1400px) {
+  .sect5 .item img {
+    width: 100px; }
+  .sect5 h2 {
+    padding-bottom: 60px; }
+  .sect5 .form h3 br {
+    display: none; }
+  .sect5 .flex .item p {
+    line-height: 24px; } }
 
 @media (max-width: 1200px) {
   .sect5 .form p {
@@ -1096,12 +1167,16 @@ button.menu-btn {
   .sect5 .form form {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    width: 350px;
+    margin: 0 auto; }
   .sect5 .form p {
     display: block;
     width: 350px; }
   .sect5 .flex .item {
-    width: 30%; } }
+    width: 30%; }
+  .sect5 .form h3 {
+    text-align: center; } }
 
 @media (max-width: 640px) {
   .sect5 h2 {
@@ -1117,38 +1192,58 @@ button.menu-btn {
         -ms-flex-pack: center;
             justify-content: center; }
     .sect5 .flex .item {
-      width: 100%; }
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
       .sect5 .flex .item img {
         width: 70px; }
       .sect5 .flex .item p {
-        padding: 5px 50px 0; }
+        padding: 0 0 0 50px;
+        text-align: left; }
       .sect5 .flex .item + .item {
         margin-top: 30px; }
   .sect5 .form form {
+    width: 100%;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
   .sect5 .form h3 {
-    text-align: center; } }
+    text-align: center;
+    padding: 48px 0 28px; } }
+
+@media (max-width: 479px) {
+  .sect5 .flex .item img {
+    width: 50px; }
+  .sect5 .flex .item p {
+    padding: 0 0 0 25px; }
+  .sect5 .flex .item {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 @media (max-width: 380px) {
   .sect5 .form p {
     width: 100%; }
   .sect5 .form h3 br {
-    display: none; }
-  .sect5 .flex .item p {
-    padding: 5px 0 0; } }
+    display: none; } }
 
 .sect6 {
   background: #F8F8F8; }
   .sect6 h3 {
-    padding: 25px 0 45px;
-    color: #333333; }
+    padding: 25px 0 45px; }
   .sect6 h4 {
     font-size: 28px;
     line-height: 33px;
-    padding-bottom: 42px; }
+    padding-bottom: 42px;
+    text-align: center; }
   .sect6 .sect6-bottom {
     text-align: center; }
     .sect6 .sect6-bottom h3 {
@@ -1189,16 +1284,19 @@ button.menu-btn {
         top: 0; }
 
 .sect6-slick .slide1 {
-  background-image: url(../img/sect6-1.svg); }
+  background-image: url(../img/sect6-1.jpg); }
 
 .sect6-slick .slide2 {
-  background-image: url(../img/sect6-2.svg); }
+  background-image: url(../img/sect6-2.jpg); }
+
+.sect6-slick .slide3 {
+  background-image: url(../img/sect6-3.jpg); }
 
 .sect6-slick h4 {
-  padding-bottom: 0;
+  padding: 0px 25px;
   font-family: "SF UI Black", sans-serif;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 20px;
+  line-height: 30px;
   color: #fff;
   text-transform: none; }
 
@@ -1460,10 +1558,16 @@ button.menu-btn {
       text-transform: uppercase;
       font-size: 16px;
       line-height: 19px; }
-    .footer .left li {
+    .footer .left li a {
+      color: rgba(255, 255, 255, 0.6);
       font-size: 14px;
       line-height: 34px;
-      color: rgba(255, 255, 255, 0.6); }
+      font-family: "SF UI Regular", sans-serif; }
+      .footer .left li a:hover {
+        color: #ffffff;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
   .footer .center {
     max-width: 400px;
     text-align: center; }

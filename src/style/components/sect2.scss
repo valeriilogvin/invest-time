@@ -9,6 +9,7 @@
   }
   h2{
     padding-bottom: 25px;
+    text-align: left;
   }
   p{
     font-size: 22px;
@@ -65,16 +66,18 @@
 }
 @media (max-width: 640px) {
   .sect2 .conteiner{
-    background: none;
+    background-position: 50% 75px;
   }
   .sect2 h2{
     padding-left: 0;
+    padding-bottom: 130px;
+
     text-align: center;
   }
 }
 @media (max-width: 479px) {
-  .sect2 h2 {
-    padding-bottom: 15px;
+  .sect2 .conteiner {
+    background-position: 50% 60px;
   }
   .sect2 p {
     font-size: 16px;
@@ -87,4 +90,8 @@
     margin-top: 20px;
   }
 }
-@media (max-width: 380px) {}
+@media (max-width: 380px) {
+  .sect2 .conteiner {
+    background-position: 50% 85px;
+  }
+}

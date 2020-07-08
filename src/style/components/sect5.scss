@@ -16,6 +16,7 @@
   .form{
     h3{
       padding: 48px 0 28px;
+      text-align: left;
     }
     form{
       display: flex;
@@ -30,6 +31,24 @@
     p{
       width: 349px;
     }
+  }
+}
+@media (max-width: 1400px) {
+  .sect5 .item {
+    img{
+      width: 100px;
+    }
+  }
+  .sect5 h2 {
+    padding-bottom: 60px;
+  }
+  .sect5 .form h3 {
+    br{
+      display: none;
+    }
+  }
+  .sect5 .flex .item p{
+    line-height: 24px;
   }
 }
 @media (max-width: 1200px) {
@@ -62,6 +81,8 @@
   }
   .sect5 .form form {
     flex-wrap: wrap;
+    width: 350px;
+    margin: 0 auto;
   }
   .sect5 .form p {
     display: block;
@@ -69,6 +90,9 @@
   }
   .sect5 .flex .item {
     width: 30%;
+  }
+  .sect5 .form h3 {
+    text-align: center;
   }
 }
 @media (max-width: 640px) {
@@ -80,11 +104,14 @@
     justify-content: center;
     .item{
       width: 100%;
+      display: flex;
+      align-items: flex-start;
       img{
         width: 70px;
       }
       p{
-        padding: 5px 50px 0;
+        padding: 0 0 0 50px;
+        text-align: left;
       }
       & + .item{
         margin-top: 30px;
@@ -93,14 +120,27 @@
   }
   .sect5 .form {
     form{
+      width: 100%;
       justify-content: center;
     }
     h3{
       text-align: center;
+      padding: 48px 0 28px ;
+
     }
   }
 }
-@media (max-width: 479px) {}
+@media (max-width: 479px) {
+  .sect5 .flex .item img {
+    width: 50px;
+  }
+  .sect5 .flex .item p {
+    padding: 0 0 0 25px;
+  }
+  .sect5 .flex .item {
+    align-items: center;
+  }
+}
 @media (max-width: 380px) {
   .sect5 .form p{
     width: 100%;
@@ -109,8 +149,5 @@
     br{
       display: none;
     }
-  }
-  .sect5 .flex .item p {
-    padding: 5px 0 0;
   }
 }

@@ -1,8 +1,5 @@
 .fixed-header{
   padding: 0;
-  #navbarId{
-
-  }
   .header{
     width: 100%;
     position: absolute;
@@ -15,7 +12,7 @@
       li{
         display: inline-block;
         a{
-          font-size: 20px;
+          font-size: 18px;
           line-height: 24px;
           font-family: 'SF UI Regular', sans-serif;
           &:hover{
@@ -42,7 +39,7 @@
   .bs-navbar {
     //transition: 0.3s ease;
     //box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: #002255;
   }
   //fixed-header : END
@@ -50,7 +47,20 @@
     display: none;
     margin-left: auto;
   }
+  a.logo{
+    img{
+      width: 170px;
+    }
+  }
+  a.button{
+    width: 270px;
+    padding: 13px 0;
+  }
+  button.menu-btn span{
+    margin-left: 10px;
+  }
 }
+
 @media(max-width: 1000px) {
   .fixed-header{
     a.logo{
@@ -83,6 +93,9 @@
 @media (max-width: 380px) {
   .fixed-header a.logo img {
     width: 100px;
+  }
+  .fixed-header a.tel {
+    font-size: 14px;
   }
   button.menu-btn span{
     margin-left: 20px;

@@ -67,11 +67,13 @@ h2{
   font-weight: $fw-h2;
   font-size: $fz-h2;
   line-height: $lh-h2;
+  text-align: center;
   span{
     color: $h2-span;
   }
 }
 h3{
+  text-align: center;
   text-transform: none;
   padding-top: 14px;
   font-family: $ff-regular;
@@ -237,14 +239,15 @@ button.slick-arrow{
   background: #2339FF; }
 //slick-style : END
 
-
-@media (max-width: 1200px) {
-  .conteiner {
-    width: 960px;
-  }
+@media (max-width: 1400px) {
   h2{
     font-size: 34px;
     line-height: 42px;
+  }
+}
+@media (max-width: 1200px) {
+  .conteiner {
+    width: 960px;
   }
 }
 @media(max-width: 1000px) {

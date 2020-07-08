@@ -1,3 +1,4 @@
+//Фиксированное меню
 var navbar = document.getElementById('navbarId');
 
 var offsetNavbar = navbar.offsetTop;
@@ -17,7 +18,15 @@ window.onscroll = function(e) {
 };
 
 $(document).ready(function(){
-    $(".input-mask-s").inputmask("+38 (999) 999-99-99");
+    
+    // якорные ссылки
+    $("body").on('click', '[href*="#"]', function(e){
+        var fixed_offset = 100;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 500);
+        e.preventDefault();
+    });
+
+    $(".input-mask-s").inputmask("+7(999) 999-99-99");
 
     $('.sect3-slick').slick({
         dots: false,

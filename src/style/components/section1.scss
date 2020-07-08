@@ -36,8 +36,10 @@
   font-size: 32px;
   line-height: 38px;
   padding-bottom: 13px;
+   text-align: left;
  }
  h3{
+   text-align: left;
    padding-top: 0;
   font-size: 28px;
   line-height: 33px;
@@ -58,6 +60,37 @@
    margin-bottom: 24px;
   }
  }
+}
+@media (max-width: 1400px) {
+  .sect1 {
+    padding: 25px 0 100px;
+  }
+  .sect1 .header ul li a {
+    font-size: 18px;
+  }
+  .sect1 h1 {
+    padding-top: 50px;
+    letter-spacing: 2px;
+    font-size: 65px;
+    line-height: 75px;
+  }
+  .sect1 h2 {
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 13px;
+  }
+  .sect1 .form {
+    margin-top: 45px;
+  }
+  .sect1 .form > p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .sect1 h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 @media (max-width: 1200px) {
   .sect1{
@@ -107,7 +140,7 @@
 }
 @media (max-width: 767px) {
   .sect1 {
-    background-position: -555px 0;
+    background-position: -750px 0;
   }
   .sect1 h1 {
     font-size: 60px;
