@@ -126,8 +126,6 @@ form input.button:hover {
     section h2 {
         font-size: 24px;
         line-height: 32px; }
-    section h2 br {
-        display: none; }
     section h3 {
         font-size: 18px;
         line-height: 22px; }
@@ -328,11 +326,33 @@ a.button2:hover{
     background-color: #fff;
     color: #333333;
 }
-.promo {
-    background: url("img/bg-promo.jpg") top center no-repeat;
+.icon {
+    display: inline-block;
+    width: 2em;
+    height: 20px;
+    stroke-width: 0;
+    stroke: currentColor;
+    cursor: pointer;
+    fill: rgba(255, 255, 255, 0.6);}
+.icon:hover{
+    fill: #ffffff;
+    transition: all .5s ease;
+}
+.social a+a{
+    padding-left: 10px;
+}
+.icon-vk {
+    width: 2em; }
+.icon-fb {
+    width: 12px; }
+.icon-inst {
+    width: 20px; }
+
+.sect1 {
+    background: url("img/bg-thanks.jpg") top center no-repeat;
     padding: 55px 0 140px;
-    text-align: right;}
-.promo .header{
+}
+.sect1 .header{
     text-align: left;
 }
 .text-block{
@@ -340,148 +360,98 @@ a.button2:hover{
     text-align: left;
     padding-right: 40px;
 }
-.promo h1, .promo h2, .promo h3 {
+.sect1 h1, .sect1 h2, .sect1 h3 {
 color: #fff; }
-.promo h1 {
-    font-family: "SF UI Bold", sans-serif;
-    text-transform: uppercase;
-    padding-top: 85px;
-    font-size: 80px;
-    line-height: 100px;
-    letter-spacing: 2px; }
-.promo p.text {
-    font-family: "SF UI Light", sans-serif;
-    color: #ffffff;
-    font-weight: 300;
-    padding-bottom: 25px;
-    font-size: 28px;
-    line-height: 33px; }
-.promo p.text span{
-    font-family: "SF UI Bold", sans-serif;
-
-}
-.promo .stat span.left{
-    font-size: 40px;
-    width: 100px;
-    display: inline-block;
-    color: #ffffff;
-    line-height: 48px;
+.sect1 h1 {
     font-family: "SF UI Black", sans-serif;
-
-}
-.promo .stat p{
-    display: flex;
-    align-items: center;
-}
-.promo .stat p+p{
-    padding-top: 10px;
-}
-.promo .stat span.right{
+    font-size: 60px;
+    padding: 100px 0 20px;
+    line-height: 72px;}
+.sect1 h2 {
     font-family: "SF UI Regular", sans-serif;
+    font-size: 28px;
+    line-height: 33px;}
+.sect1 p {
+    padding: 50px 0 25px;
 
-    font-size: 18px;
-    line-height: 21px;
-    padding-left: 25px;
     color: #ffffff;
-}
+    font-family: "SF UI Regular", sans-serif;
+    font-size: 18px;
+    line-height: 26px;}
+
 
 @media (max-width: 1400px) {
-    .promo {
-        padding: 25px 0 100px;
+    .sect1 {
+        padding: 30px 0 90px;
     }
-
-    .promo h1 {
-        padding-top: 30px;
-        letter-spacing: 2px;
-        font-size: 60px;
-        line-height: 70px;
+    .sect1 h1 {
+        padding: 70px 0 20px;
+        font-size: 50px;
+        line-height: 58px;
     }
-
-    .promo p.text {
-        font-family: "SF UI Light", sans-serif;
-        color: #ffffff;
-        font-weight: 300;
-        padding-bottom: 25px;
-        font-size: 22px;
-        line-height: 28px;
+    .sect1 h2 {
+        font-size: 24px;
+        line-height: 32px;
     }
-    .promo .stat span.left {
-        font-size: 35px;
-        width: 80px;
-    }
-    .promo .stat p+p{
-        padding-top: 0;
+    .sect1 p {
+        padding: 40px 0 20px;
     }
 }
 
 @media (max-width: 1200px) {
-    .promo {
-        padding: 50px 0 90px; }
 
-    .promo .header {
-        text-align: center;
-    }
 }
 
 @media (max-width: 1000px) {
-    .text-block {
-        padding-right: 66px;
-    }
+
 }
 
 @media (max-width: 767px) {
-    .promo{
-        text-align: center;
+    a.logo img{
+        width: 170px;
     }
-    .text-block {
-        text-align: center;
-        padding-right: 0;
+    .sect1 h1 {
+        padding: 40px 0 20px;
+        font-size: 38px;
+        line-height: 46px;
     }
-    a.button2 {
-        margin: 20px auto 0;
+    .sect1 h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .sect1 p {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
 @media (max-width: 640px) {
-    .promo {
+    .sect1 .header{
+        text-align: center;
+    }
+    .sect1 br{
+        display: none;
+    }
+    .sect1 {
         background: url("img/s1-bg-mob.jpg") top center no-repeat;
-        text-align: center; }}
-
-@media (max-width: 479px) {
-    .promo h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-    .promo p.text {
-        font-size: 18px;
-        line-height: 26px;
-    }
-    .promo .stat span.left {
-        font-size: 28px;
-    }
-    .promo .stat span.right {
-        font-family: "SF UI Regular", sans-serif;
-        font-size: 16px;
-        line-height: 21px;
+        text-align: center; }
+    .text-block{
+        padding-right: 0;
+        text-align: center;
     }
 }
+
+@media (max-width: 479px) {
+
+}
 @media (max-width: 380px) {
-    .promo{}
-    .promo a.button{
-        width: 100%;
+    .sect1 {
+        padding: 60px 0 90px;
     }
-    .promo p.text {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .promo .stat span.left {
-        width: 95px;
-    }
-    .promo .stat span.right {
-        width: 100%;
-        font-size: 16px;
-        line-height: 21px;
-        text-align: left;
+    .sect1 h1 {
+        padding: 60px 0 30px;
+        font-size: 30px;
+        line-height: 38px;
     }
 }
 @font-face {
